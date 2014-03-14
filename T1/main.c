@@ -3,21 +3,16 @@
 #include "count.h"
 #include "result.h"
 
-/*
-#ifdef unix
-#include <>
-#else
-#include <conio.h>
-#endif
-*/
-
 void count (List** word, FILE** fp) {
-  //char* read;
+  char* read; int size;
 
   while ((*word)->next != NULL) {
-    save(length((*fp)), read, (*fp));
-    treat(read);
-    add(read, (*word));
+    size = length(fp);
+    save (size, read, fp);
+    addFreq ((*word), read[size]);
+    treat (read);
+    add (read, (*word));
+    (*word) = (*word)->next;
   }
 }
 
@@ -27,9 +22,10 @@ int test () {
   FILE* fp[2];
   
   for (i = 0; i < 2; i++) {
-    open(fp[i]);
-    count(word[i]);
-    sort();
+    open (fp[i], i);
+    count (word[i]);
+    sort (word[i]);
+    fclose(fp[i]);
   }
   result();
   return again();
