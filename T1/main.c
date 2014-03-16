@@ -3,46 +3,49 @@
 #include "count.h"
 #include "result.h"
 
-void count (List** word, FILE** fp) {
-  char* read; int size;
+void contar (List** palavra, FILE** fp) {
+  char* lido; int tamanho;
 
-  while ((*word)->next != NULL) {
-    size = length(fp);
-    save (size, read, fp);
-    addFreq ((*word), read[size]);
-    treat (read);
-    add (read, (*word));
-    (*word) = (*word)->next;
+  while ((*palavra)->next != NULL) {
+    tamanho = descobrirTamanho(fp); //Descobre o tamanho da palavra
+    salvar (tamanho, lido, fp);          //Adicionam a palavra na
+    addFreq ((*palavra), lido[tamanho]); //lista
+    tratar (lido); //Trata a palavra para que ela possa ser adicionada
+    adicionar (lido, (*palavra)); //Aumenta a frequecia da palavra
+    (*palavra) = (*word)->prox;   //na lista e prossegue
   }
 }
 
-int test () {
+int teste () {
   int i = 0;
-  List* word[2];
-  FILE* fp[2];
+  List* palavra[2]; FILE* fp[2];
+  /*Para cada um dos arquivos, teremos
+  uma lista e um ponteiro 
+  para o arquivo. Índice 0 para o pri-
+  meiro arquivo e índice 1 para o segundo*/
   
   for (i = 0; i < 2; i++) {
-    open (fp[i], i);
-    count (word[i]);
-    sort (word[i]);
+    abrir (fp[i], i); //Atribui a fp um arquivo
+    contar (palavra[i]); //Conta as palavras no arquivo
+    ordernarPalavras (palavra[i], 0); //Ordena as palavras no arquivo
     fclose(fp[i]);
   }
-  result();
-  return again();
+  resultado(); //Mostra os resultados
+  return novamente(); //Pergunta se quer repetir o processo
 }
 
 int menu() {
-  int answer;
+  int resposta;
 
   printf("COMPARANDO ARQUIVOS\n\n");
   printf("1. COMPARAR ARQUIVOS\n");
   printf("2. SAIR\n\nOPCAO: ");
-  scanf("%d", &answer);
+  scanf("%d", &resposta);
   
-  if (answer) answer = test();
-  else answer = 0;
+  if (resposta) resposta = teste();
+  else resposta = 0;
   
-  return answer;
+  return resposta;
 }
 
 int main () {

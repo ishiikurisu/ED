@@ -1,102 +1,110 @@
-//Defines a list
-struct list {
-  char* name;
-  int occur;
-  struct list* next;
+//Definição de uma lista
+struct lista {
+  char* nome;
+  int ocor; //ocorrencia
+  struct lista* prox;
 };
-typedef struct list List;
+typedef struct lista List;
 
-//tools
-void open (FILE* fp, int index) {
-  sprintf(char fname[], "file%d.txt", i+1);
-  fp = fopen(fname, "r");
+/******************
+Funções acessórias
+******************/
+
+void abrir (FILE* fp, int indice) {
+  sprintf(char fnome[], "file%d.txt", indice+1);
+  fp = fopen(fnome, "r");
 }
 
-int alphanumeric (char letter) {
-  if (letter >= 48 && letter <= 90 || letter >= 97 && letter <= 122)
+int alfanumerico (char letra) {
+  if (letra >= 48 && letra <= 90 || letra >= 97 && letra <= 122)
     return 1;
   else
     return 0;
 }
-int upcase (char letter) {
-  if (letter >= 65 && letter <= 90)
+int maiusculo (char letra) {
+  if (letra >= 65 && letra <= 90)
     return 1;
   else 
     return 0;
 }
-void addFreq(List* word, char letter) {
-  List* sequence = word;
+void addFreq (List* palavra, char letra) {
+  List* sequencia = palavra;
 
-  while (sequence-> != NULL)
-    sequence = sequence->next;
-  if (sequence-> == NULL)
-    newWord(word, &letter);
+  while (sequencia->prox != NULL)
+    sequencia = sequencia->prox;
+  if (sequencia->prox == NULL)
+    novaPalavra(palavra, &letra);
   else
-    sequence->occur++;
+    sequencia->ocor++;
 }
-void changeCase (char* letter) {
-  int conv = 97 - 65;
+void trocarTamanho (char* letra) {
+  int conv = 97 - 65; //fator de conversão
 
-  if (letter >= 97)
-    letter -= conv;
+  if (letra >= 97)
+    letra -= conv;
   else
-    letter += conv;
+    letra += conv;
 }
-void newWord (List* word, char* read) {
-  List* sequence = word;
+void novaPalavra (List* palavra, char* lido) {
+  List* sequencia = palavra;
 
-  while (sequence-> != NULL)
-    sequence = sequence->next;
-  sequence->next = (List*) malloc(sizeof(List));
-  sequence = sequence->next;
-  sequence->name = read;
+  while (sequencia->prox != NULL)
+    sequencia = sequencia->prox;
+  sequencia->prox = (List*) malloc(sizeof(List));
+  sequencia = sequencia->prox;
+  sequencia->nome = lido;
+  sequencia->ocor = 0;
 }
 
-//count functions
-int length (FILE* fp) {
+/******************
+Funções em contar()
+******************/
+
+int descobrirTamanho (FILE* fp) {
   FILE* checkpoint = fp;
-  int length = 0;
-  char letter;
+  int tamanho = 0;
+  char letra;
 
   do {
-    fscanf(checkpoint, "%c", &letter);
-    letter++;
-  } while (alphanumeric(letter));
+    fscanf(checkpoint, "%c", &letra);
+    tamanho++;
+  } while (alfanumerico(letra));
 
-  return length;
+  return tamanho;
 }
 
-void save (int length, char* read, FILE* fp) {
+void salvar (int tamanho, char* lido, FILE* fp) {
   int i;
 
-  char* read = (char*) malloc(length*sizeof(char));
-  for (i = 0; i <= length; i++)
-    fscanf(fp, "%c", read[i]);
-  read[i] = '\0';
+  char* lido = (char*) malloc(tamanho*sizeof(char));
+  for (i = 0; i <= tamanho; i++)
+    fscanf(fp, "%c", lido[i]);
+  //adicionar pontuação
+  lido[i] = '\0';
 }
 
-void treat (char* read) {
+void tratar (char* lido) { //refina a palavra
   int i = 0;
 
-  while (read[i] != '\0')
-    if (upcase(read[i])) changeCase(read[i]);
+  while (lido[i] != '\0')
+    if (maiusculo(lido[i])) trocarTamanho(lido[i]);
 }
 
-void add (char* read, List* word) {
+void adicionar (char* lido, List* palavra) {
   int i;
 
-  while (read[i] != '\0' and word->name[i] != '\0' \
-  or word != NULL) {
-    if (read[i] == word->name[i])
+  while (lido[i] != '\0' and palavra->nome[i] != '\0' \
+  or palavra != NULL) {
+    if (lido[i] == palavra->nome[i])
       i++;
     else {
-      word = word->next;
+      palavra = palavra->prox;
       i = 0;
     }
   }
 
-  if (read[i] == '\0')
-    word->occur++;
+  if (lido[i] == '\0')
+    palavra->ocor++;
   else
-    newWord(word, read);
+    novaPalavra(palavra, lido);
 }
