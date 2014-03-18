@@ -93,7 +93,7 @@ void tratar (char* lido) { //refina a palavra
 void adicionar (char* lido, List* palavra) {
   int i;
 
-  while (lido[i] != '\0' and palavra->nome[i] != '\0' \
+  while (lido[i] != '\0' and palavra->nome[i] != '\0'
   or palavra != NULL) {
     if (lido[i] == palavra->nome[i])
       i++;
