@@ -1,0 +1,45 @@
+cmb: 0	est: D	n: CD1918	pp: (nil)	p: 0x1a7b100	pa: 0x1a7b0d0
+cmb: 3	est: D	n: CD3616	pp: 0x1a7b100	p: 0x1a7b0d0	pa: 0x1a7b0a0
+cmb: 7	est: A	n: AB5794	pp: 0x1a7b0d0	p: 0x1a7b0a0	pa: 0x1a7b070
+cmb: 8	est: A	n: AB1734	pp: 0x1a7b0a0	p: 0x1a7b070	pa: (nil)
+===
+#COMB = 0
+FOR dec
++1 pista
+#Pista parcial
+cmb: 0	est: D	n: CD1918	pp: (nil)	p: 0x1a7b100	pa: (nil)
+#Fim da pista parcial
+#Lista nova
+cmb: 3	est: D	n: CD3616	pp: (nil)	p: 0x1a7b0d0	pa: 0x1a7b0a0
+cmb: 7	est: A	n: AB5794	pp: 0x1a7b0d0	p: 0x1a7b0a0	pa: 0x1a7b070
+cmb: 8	est: A	n: AB1734	pp: 0x1a7b0a0	p: 0x1a7b070	pa: (nil)
+#Fim da lista nova
+FOR FOR FOR #COMB = 1
+FOR FOR FOR #COMB = 2
+FOR FOR FOR #COMB = 3
+FOR dec
+1o voo
+#Pista parcial
+cmb: 0	est: D	n: CD1918	pp: (nil)	p: 0x1a7b100	pa: 0x1a7b0d0
+cmb: 3	est: D	n: CD3616	pp: 0x1a7b100	p: 0x1a7b0d0	pa: (nil)
+#Fim da pista parcial
+#Lista nova
+cmb: 7	est: A	n: AB5794	pp: (nil)	p: 0x1a7b0a0	pa: 0x1a7b070
+cmb: 8	est: A	n: AB1734	pp: 0x1a7b0a0	p: 0x1a7b070	pa: (nil)
+#Fim da lista nova
+FOR FOR #COMB = 4
+FOR FOR #COMB = 5
+FOR FOR #COMB = 6
+FOR FOR #COMB = 7
+FOR at
++1 pista
+#Pista parcial
+cmb: 7	est: A	n: AB5794	pp: (nil)	p: 0x1a7b0a0	pa: (nil)
+#Fim da pista parcial
+#Lista nova
+cmb: 8	est: A	n: AB1734	pp: (nil)	p: 0x1a7b070	pa: (nil)
+#Fim da lista nova
+FOR +1 pista
+#Pista parcial
+cmb: 8	est: A	n: AB1734	pp: (nil)	p: 0x1a7b070	pa: (nil)
+#Fim da pista parcial

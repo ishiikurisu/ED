@@ -1,0 +1,208 @@
+comb: 4		estado: D	nome: CD9567	n: 0x205b430	PROX: 0x205b400
+comb: 10		estado: D	nome: CD2333	n: 0x205b400	PROX: 0x205b3d0
+comb: 4		estado: D	nome: CD5685	n: 0x205b3d0	PROX: 0x205b3a0
+comb: 8		estado: D	nome: CD2263	n: 0x205b3a0	PROX: 0x205b370
+comb: 11		estado: D	nome: CD2505	n: 0x205b370	PROX: 0x205b340
+comb: 12		estado: D	nome: CD9159	n: 0x205b340	PROX: 0x205b310
+comb: 8		estado: D	nome: CD0108	n: 0x205b310	PROX: 0x205b2e0
+comb: 3		estado: D	nome: CD3984	n: 0x205b2e0	PROX: 0x205b2b0
+comb: 11		estado: A	nome: AB6630	n: 0x205b2b0	PROX: 0x205b280
+comb: 12		estado: A	nome: AB0647	n: 0x205b280	PROX: 0x205b250
+comb: 12		estado: A	nome: AB5429	n: 0x205b250	PROX: 0x205b220
+comb: 10		estado: A	nome: AB7131	n: 0x205b220	PROX: 0x205b1f0
+comb: 3		estado: A	nome: AB6388	n: 0x205b1f0	PROX: 0x205b1c0
+comb: 7		estado: A	nome: AB4377	n: 0x205b1c0	PROX: 0x205b190
+comb: 1		estado: A	nome: AB6772	n: 0x205b190	PROX: 0x205b160
+comb: 1		estado: A	nome: AB8667	n: 0x205b160	PROX: 0x205b130
+comb: 0		estado: A	nome: AB2274	n: 0x205b130	PROX: 0x205b100
+comb: 11		estado: A	nome: AB8335	n: 0x205b100	PROX: 0x205b0d0
+comb: 1		estado: A	nome: AB8857	n: 0x205b0d0	PROX: 0x205b0a0
+comb: 4		estado: A	nome: AB1887	n: 0x205b0a0	PROX: 0x205b070
+comb: 5		estado: A	nome: AB3670	n: 0x205b070	PROX: (nil)
+===
+#COMB = 0
+FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR at
+nova pista
+###
+comb: 0		estado: A	nome: AB2274	n: 0x205b130	PROX: (nil)
+###
+@
+comb: 4		estado: D	nome: CD9567	n: 0x205b430	PROX: 0x205b400
+comb: 10		estado: D	nome: CD2333	n: 0x205b400	PROX: 0x205b3d0
+comb: 4		estado: D	nome: CD5685	n: 0x205b3d0	PROX: 0x205b3a0
+comb: 8		estado: D	nome: CD2263	n: 0x205b3a0	PROX: 0x205b370
+comb: 11		estado: D	nome: CD2505	n: 0x205b370	PROX: 0x205b340
+comb: 12		estado: D	nome: CD9159	n: 0x205b340	PROX: 0x205b310
+comb: 8		estado: D	nome: CD0108	n: 0x205b310	PROX: 0x205b2e0
+comb: 3		estado: D	nome: CD3984	n: 0x205b2e0	PROX: 0x205b2b0
+comb: 11		estado: A	nome: AB6630	n: 0x205b2b0	PROX: 0x205b280
+comb: 12		estado: A	nome: AB0647	n: 0x205b280	PROX: 0x205b250
+comb: 12		estado: A	nome: AB5429	n: 0x205b250	PROX: 0x205b220
+comb: 10		estado: A	nome: AB7131	n: 0x205b220	PROX: 0x205b1f0
+comb: 3		estado: A	nome: AB6388	n: 0x205b1f0	PROX: 0x205b1c0
+comb: 7		estado: A	nome: AB4377	n: 0x205b1c0	PROX: 0x205b190
+comb: 1		estado: A	nome: AB6772	n: 0x205b190	PROX: 0x205b160
+comb: 1		estado: A	nome: AB8667	n: 0x205b160	PROX: 0x205b100
+comb: 11		estado: A	nome: AB8335	n: 0x205b100	PROX: 0x205b0d0
+comb: 1		estado: A	nome: AB8857	n: 0x205b0d0	PROX: 0x205b0a0
+comb: 4		estado: A	nome: AB1887	n: 0x205b0a0	PROX: 0x205b070
+comb: 5		estado: A	nome: AB3670	n: 0x205b070	PROX: (nil)
+@
+FOR FOR FOR #COMB = 1
+FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR at
+1o voo
+###
+comb: 0		estado: A	nome: AB2274	n: 0x205b130	PROX: 0x205b190
+comb: 1		estado: A	nome: AB6772	n: 0x205b190	PROX: (nil)
+###
+@
+comb: 4		estado: D	nome: CD9567	n: 0x205b430	PROX: 0x205b400
+comb: 10		estado: D	nome: CD2333	n: 0x205b400	PROX: 0x205b3d0
+comb: 4		estado: D	nome: CD5685	n: 0x205b3d0	PROX: 0x205b3a0
+comb: 8		estado: D	nome: CD2263	n: 0x205b3a0	PROX: 0x205b370
+comb: 11		estado: D	nome: CD2505	n: 0x205b370	PROX: 0x205b340
+comb: 12		estado: D	nome: CD9159	n: 0x205b340	PROX: 0x205b310
+comb: 8		estado: D	nome: CD0108	n: 0x205b310	PROX: 0x205b2e0
+comb: 3		estado: D	nome: CD3984	n: 0x205b2e0	PROX: 0x205b2b0
+comb: 11		estado: A	nome: AB6630	n: 0x205b2b0	PROX: 0x205b280
+comb: 12		estado: A	nome: AB0647	n: 0x205b280	PROX: 0x205b250
+comb: 12		estado: A	nome: AB5429	n: 0x205b250	PROX: 0x205b220
+comb: 10		estado: A	nome: AB7131	n: 0x205b220	PROX: 0x205b1f0
+comb: 3		estado: A	nome: AB6388	n: 0x205b1f0	PROX: 0x205b1c0
+comb: 7		estado: A	nome: AB4377	n: 0x205b1c0	PROX: 0x205b160
+comb: 1		estado: A	nome: AB8667	n: 0x205b160	PROX: 0x205b100
+comb: 11		estado: A	nome: AB8335	n: 0x205b100	PROX: 0x205b0d0
+comb: 1		estado: A	nome: AB8857	n: 0x205b0d0	PROX: 0x205b0a0
+comb: 4		estado: A	nome: AB1887	n: 0x205b0a0	PROX: 0x205b070
+comb: 5		estado: A	nome: AB3670	n: 0x205b070	PROX: (nil)
+@
+FOR at
+nova pista
+###
+comb: 1		estado: A	nome: AB8667	n: 0x205b160	PROX: (nil)
+###
+@
+comb: 4		estado: D	nome: CD9567	n: 0x205b430	PROX: 0x205b400
+comb: 10		estado: D	nome: CD2333	n: 0x205b400	PROX: 0x205b3d0
+comb: 4		estado: D	nome: CD5685	n: 0x205b3d0	PROX: 0x205b3a0
+comb: 8		estado: D	nome: CD2263	n: 0x205b3a0	PROX: 0x205b370
+comb: 11		estado: D	nome: CD2505	n: 0x205b370	PROX: 0x205b340
+comb: 12		estado: D	nome: CD9159	n: 0x205b340	PROX: 0x205b310
+comb: 8		estado: D	nome: CD0108	n: 0x205b310	PROX: 0x205b2e0
+comb: 3		estado: D	nome: CD3984	n: 0x205b2e0	PROX: 0x205b2b0
+comb: 11		estado: A	nome: AB6630	n: 0x205b2b0	PROX: 0x205b280
+comb: 12		estado: A	nome: AB0647	n: 0x205b280	PROX: 0x205b250
+comb: 12		estado: A	nome: AB5429	n: 0x205b250	PROX: 0x205b220
+comb: 10		estado: A	nome: AB7131	n: 0x205b220	PROX: 0x205b1f0
+comb: 3		estado: A	nome: AB6388	n: 0x205b1f0	PROX: 0x205b1c0
+comb: 7		estado: A	nome: AB4377	n: 0x205b1c0	PROX: 0x205b100
+comb: 11		estado: A	nome: AB8335	n: 0x205b100	PROX: 0x205b0d0
+comb: 1		estado: A	nome: AB8857	n: 0x205b0d0	PROX: 0x205b0a0
+comb: 4		estado: A	nome: AB1887	n: 0x205b0a0	PROX: 0x205b070
+comb: 5		estado: A	nome: AB3670	n: 0x205b070	PROX: (nil)
+@
+FOR FOR at
+nova pista
+###
+comb: 1		estado: A	nome: AB8857	n: 0x205b0d0	PROX: (nil)
+###
+@
+comb: 4		estado: D	nome: CD9567	n: 0x205b430	PROX: 0x205b400
+comb: 10		estado: D	nome: CD2333	n: 0x205b400	PROX: 0x205b3d0
+comb: 4		estado: D	nome: CD5685	n: 0x205b3d0	PROX: 0x205b3a0
+comb: 8		estado: D	nome: CD2263	n: 0x205b3a0	PROX: 0x205b370
+comb: 11		estado: D	nome: CD2505	n: 0x205b370	PROX: 0x205b340
+comb: 12		estado: D	nome: CD9159	n: 0x205b340	PROX: 0x205b310
+comb: 8		estado: D	nome: CD0108	n: 0x205b310	PROX: 0x205b2e0
+comb: 3		estado: D	nome: CD3984	n: 0x205b2e0	PROX: 0x205b2b0
+comb: 11		estado: A	nome: AB6630	n: 0x205b2b0	PROX: 0x205b280
+comb: 12		estado: A	nome: AB0647	n: 0x205b280	PROX: 0x205b250
+comb: 12		estado: A	nome: AB5429	n: 0x205b250	PROX: 0x205b220
+comb: 10		estado: A	nome: AB7131	n: 0x205b220	PROX: 0x205b1f0
+comb: 3		estado: A	nome: AB6388	n: 0x205b1f0	PROX: 0x205b1c0
+comb: 7		estado: A	nome: AB4377	n: 0x205b1c0	PROX: 0x205b100
+comb: 11		estado: A	nome: AB8335	n: 0x205b100	PROX: 0x205b0a0
+comb: 4		estado: A	nome: AB1887	n: 0x205b0a0	PROX: 0x205b070
+comb: 5		estado: A	nome: AB3670	n: 0x205b070	PROX: (nil)
+@
+FOR #COMB = 2
+FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR #COMB = 3
+FOR FOR FOR FOR FOR FOR FOR FOR dec
+1o voo
+###
+comb: 1		estado: A	nome: AB8857	n: 0x205b0d0	PROX: 0x205b2e0
+comb: 3		estado: D	nome: CD3984	n: 0x205b2e0	PROX: (nil)
+###
+@
+comb: 4		estado: D	nome: CD9567	n: 0x205b430	PROX: 0x205b400
+comb: 10		estado: D	nome: CD2333	n: 0x205b400	PROX: 0x205b3d0
+comb: 4		estado: D	nome: CD5685	n: 0x205b3d0	PROX: 0x205b3a0
+comb: 8		estado: D	nome: CD2263	n: 0x205b3a0	PROX: 0x205b370
+comb: 11		estado: D	nome: CD2505	n: 0x205b370	PROX: 0x205b340
+comb: 12		estado: D	nome: CD9159	n: 0x205b340	PROX: 0x205b310
+comb: 8		estado: D	nome: CD0108	n: 0x205b310	PROX: 0x205b2b0
+comb: 11		estado: A	nome: AB6630	n: 0x205b2b0	PROX: 0x205b280
+comb: 12		estado: A	nome: AB0647	n: 0x205b280	PROX: 0x205b250
+comb: 12		estado: A	nome: AB5429	n: 0x205b250	PROX: 0x205b220
+comb: 10		estado: A	nome: AB7131	n: 0x205b220	PROX: 0x205b1f0
+comb: 3		estado: A	nome: AB6388	n: 0x205b1f0	PROX: 0x205b1c0
+comb: 7		estado: A	nome: AB4377	n: 0x205b1c0	PROX: 0x205b100
+comb: 11		estado: A	nome: AB8335	n: 0x205b100	PROX: 0x205b0a0
+comb: 4		estado: A	nome: AB1887	n: 0x205b0a0	PROX: 0x205b070
+comb: 5		estado: A	nome: AB3670	n: 0x205b070	PROX: (nil)
+@
+FOR FOR FOR FOR FOR at
++1 voo
+###
+comb: 0		estado: A	nome: AB2274	n: 0x205b130	PROX: 0x205b190
+comb: 1		estado: A	nome: AB6772	n: 0x205b190	PROX: 0x205b1f0
+comb: 3		estado: A	nome: AB6388	n: 0x205b1f0	PROX: (nil)
+###
+@
+comb: 4		estado: D	nome: CD9567	n: 0x205b430	PROX: 0x205b400
+comb: 10		estado: D	nome: CD2333	n: 0x205b400	PROX: 0x205b3d0
+comb: 4		estado: D	nome: CD5685	n: 0x205b3d0	PROX: 0x205b3a0
+comb: 8		estado: D	nome: CD2263	n: 0x205b3a0	PROX: 0x205b370
+comb: 11		estado: D	nome: CD2505	n: 0x205b370	PROX: 0x205b340
+comb: 12		estado: D	nome: CD9159	n: 0x205b340	PROX: 0x205b310
+comb: 8		estado: D	nome: CD0108	n: 0x205b310	PROX: 0x205b2b0
+comb: 11		estado: A	nome: AB6630	n: 0x205b2b0	PROX: 0x205b280
+comb: 12		estado: A	nome: AB0647	n: 0x205b280	PROX: 0x205b250
+comb: 12		estado: A	nome: AB5429	n: 0x205b250	PROX: 0x205b220
+comb: 10		estado: A	nome: AB7131	n: 0x205b220	PROX: 0x205b1c0
+comb: 7		estado: A	nome: AB4377	n: 0x205b1c0	PROX: 0x205b100
+comb: 11		estado: A	nome: AB8335	n: 0x205b100	PROX: 0x205b0a0
+comb: 4		estado: A	nome: AB1887	n: 0x205b0a0	PROX: 0x205b070
+comb: 5		estado: A	nome: AB3670	n: 0x205b070	PROX: (nil)
+@
+FOR FOR FOR #COMB = 4
+FOR dec
++1 voo !!!!!!!!
+###
+comb: 1		estado: A	nome: AB8857	n: 0x205b0d0	PROX: 0x205b2e0
+comb: 3		estado: D	nome: CD3984	n: 0x205b2e0	PROX: 0x205b430
+comb: 4		estado: D	nome: CD9567	n: 0x205b430	PROX: (nil)
+###
+@
+comb: 4		estado: D	nome: CD9567	n: 0x205b430	PROX: (nil)
+@
+FOR FOR at
++1 voo
+###
+comb: 0		estado: A	nome: AB2274	n: 0x205b130	PROX: 0x205b190
+comb: 1		estado: A	nome: AB6772	n: 0x205b190	PROX: 0x205b1f0
+comb: 3		estado: A	nome: AB6388	n: 0x205b1f0	PROX: 0x205b3d0
+comb: 4		estado: D	nome: CD5685	n: 0x205b3d0	PROX: (nil)
+###
+@
+comb: 4		estado: D	nome: CD9567	n: 0x205b430	PROX: (nil)
+@
+FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR FOR at
+1o voo
+###
+comb: 1		estado: A	nome: AB8667	n: 0x205b160	PROX: 0x205b0a0
+comb: 4		estado: A	nome: AB1887	n: 0x205b0a0	PROX: (nil)
+###
+@
+comb: 4		estado: D	nome: CD9567	n: 0x205b430	PROX: (nil)
+@
