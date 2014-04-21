@@ -8,7 +8,8 @@ void mostrar(no* tabuleiro)
     {
       puts(" ");
     }
-    printf("%d:%d:%d\t", tab->info,tab->pos[0], tab->pos[1]);
+    printf("%d:%d:%d\t", tab->info, tab->pos[0], tab->pos[1]);
+
     tab = tab->prox;
   }
 
@@ -25,11 +26,12 @@ no* ordenarPrioridade (no* prioridade)
     puts("FLAG");
     if
     (
-      (pdd->endereco->info < menor) &&
+      (pdd->info < menor) &&
+      (pdd->info > 0) &&
       (prioridade->prox != pdd)
     )
     {
-      menor = pdd->endereco->info;
+      menor = pdd->info;
 
       pdd->ant->prox = pdd->prox;
       pdd->prox->ant = pdd->ant;
@@ -41,6 +43,7 @@ no* ordenarPrioridade (no* prioridade)
     pdd = pdd->prox;
   }
 
+  puts(" ");
   return prioridade;
 }
 
@@ -50,13 +53,16 @@ no* definirPrioridades (no* tabuleiro)
   no* prioridade = (no*) malloc(sizeof(no));
   no* pdd = prioridade;
   
+  pdd->info = 0;
   while (tab != NULL)
   {
     if (tab->estado < 0)
     {
       pdd->endereco = tab;
       pdd->prox = (no*) malloc(sizeof(no));
+      pdd->prox->prox = NULL;
       pdd->prox->ant = pdd;
+      pdd->prox->info = tab->info;
       pdd = pdd->prox;
     }
 
@@ -65,6 +71,7 @@ no* definirPrioridades (no* tabuleiro)
   
   mostrar(prioridade);
   prioridade = ordenarPrioridade(prioridade);
+  mostrar(prioridade);
 
   return prioridade;
 }
