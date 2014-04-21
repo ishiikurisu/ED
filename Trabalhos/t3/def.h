@@ -1,3 +1,7 @@
+#define bool int
+#define false 0
+#define true 1
+
 typedef struct no {
   int info; /*numero contido no no*/
   int estado; /*permissao para escrever*/

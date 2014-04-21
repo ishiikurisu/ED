@@ -16,34 +16,29 @@ void mostrar(no* tabuleiro)
   puts("\n"); 
 }
 
-no* ordenarPrioridade (no* prioridade)
+no* ordPrior (no* prioridade)
 {
-  no* pdd = prioridade->prox;
-  int menor = 666;
+  bool flag = true;
+  no* pdd;
 
-  while (pdd != NULL)
+  while (flag)
   {
-    puts("FLAG");
-    if
-    (
-      (pdd->info < menor) &&
-      (pdd->info > 0) &&
-      (prioridade->prox != pdd)
-    )
-    {
-      menor = pdd->info;
-
-      pdd->ant->prox = pdd->prox;
-      pdd->prox->ant = pdd->ant;
-      pdd->prox = prioridade->prox;
-      pdd->ant = prioridade;
-      prioridade->prox = pdd;
+    flag = false;
+    pdd = prioridade->prox;
+    while (pdd->prox != NULL) {
+      if (pdd->info > pdd->prox->info)
+      {
+        pdd->ant->prox = pdd->prox;
+        pdd->ant = pdd->prox;
+        pdd->prox->prox = pdd;
+        pdd->prox->ant = pdd->ant;
+        pdd->prox = pdd->prox->prox;
+        flag = true;
+      }
+      pdd = pdd->prox;
     }
-
-    pdd = pdd->prox;
   }
 
-  puts(" ");
   return prioridade;
 }
 
@@ -60,6 +55,8 @@ no* definirPrioridades (no* tabuleiro)
     {
       pdd->endereco = tab;
       pdd->prox = (no*) malloc(sizeof(no));
+      pdd->prox->pos[0] = tab->pos[0];
+      pdd->prox->pos[1] = tab->pos[1];
       pdd->prox->prox = NULL;
       pdd->prox->ant = pdd;
       pdd->prox->info = tab->info;
@@ -70,7 +67,7 @@ no* definirPrioridades (no* tabuleiro)
   }
   
   mostrar(prioridade);
-  prioridade = ordenarPrioridade(prioridade);
+  prioridade = ordPrior(prioridade);
   mostrar(prioridade);
 
   return prioridade;
