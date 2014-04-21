@@ -80,15 +80,14 @@ no* definirPrioridades (no* tabuleiro)
 
 void jogar (no* tabuleiro)
 {
+  no* prioridade = definirPrioridades(tabuleiro);
   arvore* backtrack = plantarArvore();
-  no* prioridade, *pdd;
+  no* *pdd = prioridade->prox;
   no* tab = tabuleiro;
   no* objetivo;
 
-  pdd = prioridade = definirPrioridades(tabuleiro);
-
-  /*
   if (prioridade->endereco->info != 1)
+  /*
     do the first move;
 
   while (things are fucked up)
