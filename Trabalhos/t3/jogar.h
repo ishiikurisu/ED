@@ -1,4 +1,4 @@
-git void mostrar(no* tabuleiro)
+void mostrar(no* tabuleiro)
 {
   no* tab = tabuleiro;
 
@@ -6,7 +6,7 @@ git void mostrar(no* tabuleiro)
   {
     if (tab->pos[1] == 0)
     {
-      puts("\n");
+      puts(" ");
     }
     printf("%d:%d:%d\t", tab->info,tab->pos[0], tab->pos[1]);
     tab = tab->prox;
@@ -15,11 +15,40 @@ git void mostrar(no* tabuleiro)
   puts("\n"); 
 }
 
+no* ordenarPrioridade (no* prioridade)
+{
+  no* pdd = prioridade->prox;
+  int menor = 666;
+
+  while (pdd != NULL)
+  {
+    puts("FLAG");
+    if
+    (
+      (pdd->endereco->info < menor) &&
+      (prioridade->prox != pdd)
+    )
+    {
+      menor = pdd->endereco->info;
+
+      pdd->ant->prox = pdd->prox;
+      pdd->prox->ant = pdd->ant;
+      pdd->prox = prioridade->prox;
+      pdd->ant = prioridade;
+      prioridade->prox = pdd;
+    }
+
+    pdd = pdd->prox;
+  }
+
+  return prioridade;
+}
+
 no* definirPrioridades (no* tabuleiro) 
 {
+  no* tab = tabuleiro->prox;
   no* prioridade = (no*) malloc(sizeof(no));
   no* pdd = prioridade;
-  no* tab = tabuleiro->prox;
   
   while (tab != NULL)
   {
@@ -33,7 +62,9 @@ no* definirPrioridades (no* tabuleiro)
 
     tab = tab->prox;
   }
+  
   mostrar(prioridade);
+  prioridade = ordenarPrioridade(prioridade);
 
   return prioridade;
 }
@@ -46,9 +77,10 @@ void jogar (no* tabuleiro)
   no* objetivo;
 
   pdd = prioridade = definirPrioridades(tabuleiro);
-  /*
 
-  do the first move
+  /*
+  if (prioridade->endereco->info != 1)
+    do the first move;
 
   while (things are fucked up)
   {
