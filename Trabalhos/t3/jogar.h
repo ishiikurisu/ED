@@ -19,23 +19,28 @@ void mostrar(no* tabuleiro)
 no* ordPrior (no* prioridade)
 {
   bool flag = true;
-  no* pdd;
+  no *pdd, *ant, *prox;
 
   while (flag)
   {
     flag = false;
     pdd = prioridade->prox;
     while (pdd->prox != NULL) {
+      puts("FLAG");
       if (pdd->info > pdd->prox->info)
       {
-        pdd->ant->prox = pdd->prox;
-        pdd->ant = pdd->prox;
-        pdd->prox->prox = pdd;
-        pdd->prox->ant = pdd->ant;
-        pdd->prox = pdd->prox->prox;
+        ant = pdd->ant;
+        prox = pdd->prox;
+        prox->ant = ant;
+        ant->prox = prox;
+
+        pdd->prox = prox->prox;
+        prox->prox = pdd;
+        pdd->ant = prox;
+
         flag = true;
       }
-      pdd = pdd->prox;
+      else pdd = pdd->prox;
     }
   }
 
