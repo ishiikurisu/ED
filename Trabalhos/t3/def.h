@@ -13,6 +13,7 @@ typedef struct no {
 
 typedef struct arvore {
   int vez;
+  int pos[2];
   struct arvore* pai;
   struct arvore* filho;
   struct arvore* irmao;
@@ -22,6 +23,8 @@ typedef struct fila {
   no* inicio;
   no* fim;
 } fila;
+
+void pass(){return;}
 
 no* criarTabuleiro(no* tabuleiro)
 {
@@ -36,12 +39,12 @@ no* criarTabuleiro(no* tabuleiro)
 }
 
 
-arvore* plantarArvore ()
+arvore* plantarArvore (arvore *pai)
 {
   arvore* raiz = (arvore*) malloc(sizeof(arvore));
 
   raiz->vez = 0;
-  raiz->pai = NULL;
+  raiz->pai = pai;
   raiz->filho = NULL;
   raiz->irmao = NULL;
 

@@ -1,8 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+int tamanho = 0;
+
 #include "def.h"
+//#include "jogar.h"
 #include "jogar.h"
+
 
 int mult10 (int t) {
   int i, result = 1;
@@ -17,7 +21,7 @@ void lerArquivo (no *tabuleiro)
 {
   FILE* fp;
   no *tab;
-  int tamanho = 0, i = -1, j = 0, x, y;
+  int /*tamanho = 0,*/ i = -1, j = 0, x, y;
   char valor[3];
 
   fp = fopen("file.txt", "r");
