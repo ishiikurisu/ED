@@ -43,7 +43,7 @@ arvore* plantarArvore (arvore *pai)
 {
   arvore* raiz = (arvore*) malloc(sizeof(arvore));
 
-  raiz->vez = 0;
+  raiz->vez = 1;
   raiz->pai = pai;
   raiz->filho = NULL;
   raiz->irmao = NULL;

@@ -94,11 +94,17 @@ void lerArquivo (no *tabuleiro)
 int main ()
 {
   no* tabuleiro;
+  bool flag;
 
   tabuleiro = criarTabuleiro(tabuleiro);
   lerArquivo(tabuleiro);
   mostrar(tabuleiro);
-  jogar(tabuleiro);
+  flag = jogar(tabuleiro);
+  if (flag)
+    puts("SOLUCAO: ");
+  else
+    puts("ESTE TABULEIRO NÃO POSSUI SOLUÇÃO: ");
+  mostrar(tabuleiro);
 
   return 0;
 }
