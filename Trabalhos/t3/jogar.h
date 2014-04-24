@@ -45,6 +45,11 @@ no* caminhar (no* tabuleiro, int passos)
   return tab;
 }
 
+int andar (no* tab, arvore* root)
+{
+  return (root->pos[1] - tab->pos[1]) * tamanho + root->pos[0] - tab->pos[0]);
+}
+
 no* ordPrior (no* prioridade)
 {
   bool flag = true;
@@ -295,8 +300,7 @@ no* mover (no* tabuleiro, arvore* raiz)
   arvore* root = raiz;
   int passos;
 
-  passos = (root->pos[1] - tab->pos[1]) * tamanho + 
-  (root->pos[0] - tab->pos[0]);
+  passos = decidirPassos(tab, root);
   tab = caminhar(tab, passos);
 
   if (tab->estado == 0)
@@ -308,12 +312,25 @@ no* mover (no* tabuleiro, arvore* raiz)
   return tab; 
 }
 
-/*
-void limpar(no* tabuleiro, arvore* raiz)
+arvore* limpar(no* tabuleiro, arvore* raiz)
 {
-  
+  no* tab = tabuleiro;
+  arvore* root = raiz, *temp;
+
+  while (root->irmao != NULL)
+  {
+    tab = caminhar(tab, decidirPassos(tab, root));
+    tab->estado = 0;
+    temp = root->irmao;
+    free(root);
+    root = temp;
+  }
+  root = root->pai;
+  free(root->filho);
+  root->filho = NULL;
+
+  return root;
 }
-*/
 
 arvore* percorrerArvore (arvore* raiz, no* tabuleiro, int limite)
 {
