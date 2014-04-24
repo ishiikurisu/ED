@@ -348,7 +348,7 @@ bool jogar (no* tabuleiro)
 
   /*
   if (prioridade->endereco->info != 1)
-    do the first move;
+    FAZER O PRIMEIRO MOVIMENTO
   */
   tab = pdd->endereco;
   pdd = pdd->prox;
@@ -377,14 +377,17 @@ bool jogar (no* tabuleiro)
     else if (root->irmao != NULL)
       root = root->irmao;
     else if (root->pai->irmao != NULL)
-      root = root->pai->irmao;      
-    else if (root->pai->pai != NULL)
-      //root = root->pai->pai;
-      root == NULL;
+      root = root->pai->irmao;
+    else
+      root = NULL;
   }
 
   if (root == NULL)
     return false;
-  else
-    return true;
+  
+  /*que tal não fazer o primeiro movimento
+    e somente preencher os espaços vazios
+    dos dois lados?*/
+  /*PREENCHER ESPAÇOS VAZIOS*/
+  return true;
 }
