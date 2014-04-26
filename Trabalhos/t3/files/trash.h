@@ -16,3 +16,5 @@
     root = root->pai->pai; 
   }
   */
+
+397@jogar.h if (root->pai->irmao != NULL)

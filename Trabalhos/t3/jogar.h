@@ -45,9 +45,9 @@ no* caminhar (no* tabuleiro, int passos)
   return tab;
 }
 
-int andar (no* tab, arvore* root)
+int decidirPassos (no* tab, arvore* root)
 {
-  return (root->pos[1] - tab->pos[1]) * tamanho + root->pos[0] - tab->pos[0]);
+  return (root->pos[1] - tab->pos[1]) * tamanho + (root->pos[0] - tab->pos[0]);
 }
 
 no* ordPrior (no* prioridade)
@@ -385,7 +385,7 @@ bool jogar (no* tabuleiro)
     (
       root->pos[0] == pdd->pos[0] &&
       root->pos[1] == pdd->pos[1] &&
-      root->vez == pdd->info;
+      root->vez == pdd->info
     )
     {
       tab = pdd->endereco;
@@ -393,18 +393,18 @@ bool jogar (no* tabuleiro)
     }
     else if (root->irmao != NULL)
       root = root->irmao;
-    else if (root->pai->irmao != NULL)
-      root = root->pai->irmao;
+    else if (root->pai != NULL)
+      root = root->pai->irmao;  
     else
       root = NULL;
   }
 
-  if (root == NULL)
-    return false;
+  if (pdd == NULL)
+    return true;
   
   /*que tal não fazer o primeiro movimento
     e somente preencher os espaços vazios
     dos dois lados?*/
   /*PREENCHER ESPAÇOS VAZIOS*/
-  return true;
+  return false;
 }
