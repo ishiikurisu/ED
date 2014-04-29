@@ -8,7 +8,7 @@ void mostrar(no* tabuleiro)
     {
       puts(" ");
     }
-    printf("%d:%d:%d\t", tab->info, tab->pos[0], tab->pos[1]);
+    printf("%d:%d:%d\t", tab->info, tab->pos[1], tab->pos[0]);
 
     tab = tab->prox;
   }
@@ -47,7 +47,7 @@ no* caminhar (no* tabuleiro, int passos)
 
 int decidirPassos (no* tab, arvore* root)
 {
-  return (root->pos[1] - tab->pos[1]) * tamanho + (root->pos[0] - tab->pos[0]);
+  return (root->pos[0] - tab->pos[0]) * tamanho + (root->pos[1] - tab->pos[1]);
 }
 
 no* ordPrior (no* prioridade)
@@ -88,12 +88,15 @@ no* definirPrioridades (no* tabuleiro)
   no* pdd = prioridade;
   
   pdd->info = 0;
+  pdd->prox = pdd->ant = NULL;
+  pdd->endereco = NULL;
+
   while (tab != NULL)
   {
     if (tab->estado < 0)
     {
-      pdd->endereco = tab;
       pdd->prox = (no*) malloc(sizeof(no));
+      pdd->prox->endereco = tab;
       pdd->prox->pos[0] = tab->pos[0];
       pdd->prox->pos[1] = tab->pos[1];
       pdd->prox->prox = NULL;
@@ -135,8 +138,8 @@ arvore* popularArvore (arvore *raiz)
       root->irmao = plantarArvore(raiz);
       root = root->irmao;
     }
-    root->pos[0] = raiz->pos[0] - 1;
     root->pos[1] = raiz->pos[1] - 1;
+    root->pos[0] = raiz->pos[0] - 1;
     root->vez = raiz->vez + 1;
   }  
 
@@ -155,8 +158,8 @@ arvore* popularArvore (arvore *raiz)
       root->irmao = plantarArvore(raiz);
       root = root->irmao;
     }
-    root->pos[0] = raiz->pos[0] - 1;
-    root->pos[1] = raiz->pos[1];
+    root->pos[1] = raiz->pos[1] - 1;
+    root->pos[0] = raiz->pos[0];
     root->vez = raiz->vez + 1;
   }
 
@@ -177,14 +180,34 @@ arvore* popularArvore (arvore *raiz)
       root->irmao = plantarArvore(raiz);
       root = root->irmao;
     }
-    root->pos[0] = raiz->pos[0] - 1;
-    root->pos[1] = raiz->pos[1] + 1;
+    root->pos[1] = raiz->pos[1] - 1;
+    root->pos[0] = raiz->pos[0] + 1;
     root->vez = raiz->vez + 1;
   }
 
   if
   (
-    raiz->pos[0] > 0
+    raiz->pos[1] > 0
+  )
+  {
+    if (!flag) 
+    {
+      root = raiz->filho = plantarArvore(raiz);
+      flag = !flag;
+    }
+    else
+    {
+      root->irmao = plantarArvore(raiz);
+      root = root->irmao;
+    }
+    root->pos[1] = raiz->pos[1];
+    root->pos[0] = raiz->pos[0] - 1;
+    root->vez = raiz->vez + 1;
+  }
+
+  if
+  (
+    raiz->pos[1] < tamanho
   )
   {
     if (!flag) 
@@ -198,8 +221,30 @@ arvore* popularArvore (arvore *raiz)
       root->irmao = plantarArvore(raiz);
       root = root->irmao;
     }
-    root->pos[0] = raiz->pos[0];
-    root->pos[1] = raiz->pos[1] - 1;
+    root->pos[1] = raiz->pos[1];
+    root->pos[0] = raiz->pos[0] + 1;
+    root->vez = raiz->vez + 1;
+  }
+
+  if
+  (
+    raiz->pos[0] < tamanho &&
+    raiz->pos[1] > 0
+  )
+  {
+    if (!flag) 
+    {
+      //não tem filhos
+      root = raiz->filho = plantarArvore(raiz);
+      flag = !flag;
+    }
+    else
+    {
+      root->irmao = plantarArvore(raiz);
+      root = root->irmao;
+    }
+    root->pos[1] = raiz->pos[1] + 1;
+    root->pos[0] = raiz->pos[0] - 1;
     root->vez = raiz->vez + 1;
   }
 
@@ -221,49 +266,6 @@ arvore* popularArvore (arvore *raiz)
     }
     root->pos[0] = raiz->pos[0];
     root->pos[1] = raiz->pos[1] + 1;
-    root->vez = raiz->vez + 1;
-  }
-
-  if
-  (
-    raiz->pos[0] > 0 &&
-    raiz->pos[1] < tamanho
-  )
-  {
-    if (!flag) 
-    {
-      //não tem filhos
-      root = raiz->filho = plantarArvore(raiz);
-      flag = !flag;
-    }
-    else
-    {
-      root->irmao = plantarArvore(raiz);
-      root = root->irmao;
-    }
-    root->pos[0] = raiz->pos[0] + 1;
-    root->pos[1] = raiz->pos[1] - 1;
-    root->vez = raiz->vez + 1;
-  }
-
-  if
-  (
-    raiz->pos[1] < tamanho
-  )
-  {
-    if (!flag) 
-    {
-      //não tem filhos
-      root = raiz->filho = plantarArvore(raiz);
-      flag = !flag;
-    }
-    else
-    {
-      root->irmao = plantarArvore(raiz);
-      root = root->irmao;
-    }
-    root->pos[0] = raiz->pos[0] + 1;
-    root->pos[1] = raiz->pos[1];
     root->vez = raiz->vez + 1;
   }
 
@@ -315,7 +317,7 @@ no* mover (no* tabuleiro, arvore* raiz)
 arvore* limpar(no* tabuleiro, arvore* raiz)
 {
   no* tab = tabuleiro;
-  arvore* root = raiz, *temp;
+  arvore* root = raiz->filho, *temp;
 
   while (root->irmao != NULL)
   {
@@ -329,13 +331,18 @@ arvore* limpar(no* tabuleiro, arvore* raiz)
   free(root->filho);
   root->filho = NULL;
 
-  return root;
+  return raiz;
+}
+
+void showTree (arvore* raiz)
+{
+  printf("%d:%d:%d\t", raiz->vez, raiz->pos[0], raiz->pos[1]);
 }
 
 arvore* percorrerArvore (arvore* raiz, no* tabuleiro, int limite)
 {
   no* tab = tabuleiro;
-  arvore* root;
+  arvore* root = raiz;
 
   if 
   (
@@ -344,6 +351,8 @@ arvore* percorrerArvore (arvore* raiz, no* tabuleiro, int limite)
   )
   {
     //ainda não chegou ao limite
+    puts("@percorrer");
+    showTree(raiz);
     raiz = popularArvore(raiz);
     root = raiz->filho;
     tab = mover(tab, root);
@@ -369,7 +378,7 @@ bool jogar (no* tabuleiro)
   */
   tab = pdd->endereco;
   pdd = pdd->prox;
-  limite = pdd->info - tab->info;
+  limite = pdd->endereco->info - tab->info;
   root->pos[0] = tab->pos[0];
   root->pos[1] = tab->pos[1];
   root->vez = 1;
@@ -388,15 +397,33 @@ bool jogar (no* tabuleiro)
       root->vez == pdd->info
     )
     {
+      puts("sucess");
       tab = pdd->endereco;
       pdd = pdd->prox;
+      if (pdd != NULL)
+        limite = pdd->info - tab->info;
     }
     else if (root->irmao != NULL)
+    {
+      puts("brother");
+      showTree(root);
       root = root->irmao;
-    else if (root->pai != NULL)
-      root = root->pai->irmao;  
+    }
+    else if (root->pai->irmao != NULL) //SUSPECT. Na verdade ele falha quando retorna pra raiz; 
+    {
+      puts("suspect");
+      root = limpar(tab, root->pai);
+      root = root->irmao;
+    }
     else
-      root = NULL;
+    {
+      puts("exception");
+      while (root->pai->irmao == NULL && root->pai != NULL)
+        root = root->pai;
+      if (root->pai == NULL)
+        root = NULL;
+    }
+
   }
 
   if (pdd == NULL)

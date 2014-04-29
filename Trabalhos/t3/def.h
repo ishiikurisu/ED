@@ -3,7 +3,7 @@
 #define true 1
 
 typedef struct no {
-  int info; /*numero contido no no*/
+  int info;   /*numero contido no no*/
   int estado; /*permissao para escrever*/
   int pos[2]; /*coordanadas [x, y]*/
   struct no* endereco;
