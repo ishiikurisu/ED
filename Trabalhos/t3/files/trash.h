@@ -51,3 +51,33 @@ void escreverArvore (arvore* raiz)
 
   return;
 }
+
+/*
+    while (tab->estado != 0 && root != NULL)
+    {
+      root = root->irmao;
+      tab = mover(tab, root); 
+    }
+    */
+
+    /*
+    else if (temp->pai != NULL)
+    {
+      puts("father");
+      showTree(temp);
+      root = limpar(tab, temp->pai);
+      temp = root = root->irmao;
+    }
+    else
+    {
+      puts("exception");
+      puts("exception");
+      do {root = temp->pai;}
+      while (root->pai->irmao == NULL && root->pai != NULL);
+      if (root->pai == NULL)
+        root = NULL;
+      #btw we 697 lines by now
+      pass();
+    }    
+      */
+

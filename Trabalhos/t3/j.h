@@ -1,50 +1,86 @@
-void showNode(no* tab)
+#define bool int
+#define true 1
+#define false 0
+#define vez state
+
+typedef struct node {
+  int info;           // number at node
+  int state;          // permission to write
+  int pos[2];         // [y, x] coordinates
+  char kind;          // 'l' == list; 't' == tree;
+  struct node* up;    //ant || pai
+  struct node* down;  //prox || filho
+  struct node* right; //endereco || irmao
+} node;
+
+node* newNode (node* up, char kind)
 {
-  if (tab != NULL)
+  node* nd = (node*) malloc(sizeof(node));
+  nd->kind = kind;
+
+  switch (kind)
+  {
+    case 'l':
+      nd->info = -1;
+      nd->state = -1;
+      nd->up = NULL;
+      nd->down = NULL;
+      nd->right = up;
+    break;
+    case 't':
+      nd->info = nd->state = 0;
+      raiz->up = up;
+      raiz->down = NULL;
+      raiz->right = NULL;
+    break;
+  }
+
+  return nd;
+}
+
+void showNode(node* nd)
+{
+  if (nd != NULL)
     printf
       (
-        "tab:%d:%d:%d\t",
-        tab->info, tab->pos[1], tab->pos[0]
+        "%c:%d:%d:%d\t",
+        nd-> kind, nd->info, nd->pos[1], nd->pos[0]
       );
+
   fflush(stdout);
+  return;
 }
 
-void showTree (arvore* raiz)
+void showAllNodes(node* n)
 {
-  if (raiz != NULL)
-    printf("root:%d:%d:%d\t", raiz->vez, raiz->pos[1], raiz->pos[0]);
-}
+  node* nd = n;
 
-void mostrar(no* tabuleiro)
-{
-  no* tab = tabuleiro;
-
-  while (tab != NULL)
+  while (nd != NULL)
   {
-    if (tab->pos[1] == 0)
+    if (nd->pos[1] == 0)
     {
-      printf("\n");
+      puts(" ");
     }
-    printf("%d:%d:%d\t", tab->info, tab->pos[1], tab->pos[0]);
+    showNode(nd);
 
-    tab = tab->prox;
+    nd = nd->down;
   }
 
   puts("\n"); 
 }
 
-bool dentro (arvore* root)
-{ /*verifica se está dentro da fronteira*/
+bool inside (node* nd)
+{ //verifica se está dentro da fronteira
   return 
   (
-      root->pos[0] >= 0 &&
-      root->pos[1] >= 0 &&
-      root->pos[0] < tamanho &&
-      root->pos[1] < tamanho
+      nd->pos[0] >= 0 &&
+      nd->pos[1] >= 0 &&
+      nd->pos[0] < tamanho &&
+      nd->pos[1] < tamanho
   );
 }
 
-no* caminhar (no* tabuleiro, int passos)
+node* caminhar (node* tabuleiro, int passos)
 {
   no* tab = tabuleiro;
   int i;
@@ -74,7 +110,7 @@ no* caminhar (no* tabuleiro, int passos)
   return tab;
 }
 
-int decidirPassos (no* tab, arvore* root)
+int decidirPassos (node* tab, node* root)
 {
   if (root == NULL || tab == NULL)
     return 0;
@@ -82,86 +118,74 @@ int decidirPassos (no* tab, arvore* root)
   return (root->pos[0] - tab->pos[0]) * tamanho + (root->pos[1] - tab->pos[1]);
 }
 
-no* ordPrior (no* prioridade)
+node* ordPrior (node* prioridade)
 {
-  /*vide a proxima funcao para comentarios*/
   bool flag = true;
-  no *pdd, *ant, *prox;
+  node *pdd, *ant, *prox;
 
   while (flag)
   {
     flag = false;
-    pdd = prioridade->prox;
-    while (pdd->prox != NULL) 
-    {
-      if (pdd->info > pdd->prox->info)
+    pdd = prioridade->down;
+    while (pdd->down != NULL) {
+      puts("FLAG");
+      if (pdd->info > pdd->up->info)
       {
-        ant = pdd->ant;
-        prox = pdd->prox;
-        prox->ant = ant;
-        ant->prox = prox;
+        ant = pdd->up;
+        prox = pdd->down;
+        prox->down = ant;
+        ant->down = prox;
 
-        pdd->prox = prox->prox;
-        prox->prox = pdd;
-        pdd->ant = prox;
+        pdd->down = prox->down;
+        prox->down = pdd;
+        pdd->up = prox;
 
         flag = true;
       }
-      else pdd = pdd->prox;
+      else pdd = pdd->down;
     }
   }
 
   return prioridade;
 }
 
-no* definirPrioridades (no* tabuleiro) 
+no* definirPrioridades (node* tabuleiro) 
 {
-  /*
-  Esta funcao, junta da funcao ordPrior(), define a lista
-  de posicoes prioritarias que guiarao aonde o bot devera
-  se mover ao longo do tabuleiro.
-  */
-  no* tab = tabuleiro->prox;
-  no* prioridade = (no*) malloc(sizeof(no));
-  no* pdd = prioridade;
+  node* tab = tabuleiro->down;
+  node* prioridade = (no*) malloc(sizeof(no));
+  node* pdd = prioridade;
   
   pdd->info = 0;
-  pdd->prox = pdd->ant = NULL;
-  pdd->endereco = NULL;
+  pdd->down = pdd->up = NULL;
+  pdd->right = NULL;
 
   while (tab != NULL)
   {
-    if (tab->estado < 0)
+    if (tab->state < 0)
     {
-      pdd->prox = (no*) malloc(sizeof(no));
-      pdd->prox->endereco = tab;
-      pdd->prox->pos[0] = tab->pos[0];
-      pdd->prox->pos[1] = tab->pos[1];
-      pdd->prox->prox = NULL;
-      pdd->prox->ant = pdd;
-      pdd->prox->info = tab->info;
-      pdd = pdd->prox;
+      pdd->down = (no*) malloc(sizeof(no));
+      pdd->down->right = tab;
+      pdd->down->pos[0] = tab->pos[0];
+      pdd->down->pos[1] = tab->pos[1];
+      pdd->down->down = NULL;
+      pdd->down->up = pdd;
+      pdd->down->info = tab->info;
+      pdd = pdd->down;
     }
 
-    tab = tab->prox;
+    tab = tab->down;
   }
   
+  showAllNodes(prioridade);
   prioridade = ordPrior(prioridade);
-  printf("Lista de prioridades:\t");
-  mostrar(prioridade->prox);
+  showAllNodes(prioridade);
 
   return prioridade;
 }
 
-arvore* popularArvore (arvore *raiz)
+node* popularArvore (node *raiz)
 {
-  /*
-  Esta funcao decide se, a principio, uma determinada
-  posicao no tabuleiro esta disponivel. Ela faz isso
-  para todas as posicoes ao redor da posicao na qual
-  a variavel raiz se encontra.
-  */
-  arvore* root = raiz;
+  node* root = raiz;
   bool flag = false; //tem filhos?
 
   if (root == NULL)
@@ -343,12 +367,8 @@ arvore* popularArvore (arvore *raiz)
   return raiz;
 }
 
-no* mover (no* tabuleiro, arvore* raiz)
+no* mover (node* tabuleiro, node* raiz)
 {
-  /*
-  Esta funcao move o bot tab ao longo do tabuleiro.
-  Ela o poe na mesma posicao que o no raiz estiver.
-  */
   no* tab = tabuleiro;
   arvore* root = raiz;
   int passos;
@@ -373,9 +393,6 @@ no* mover (no* tabuleiro, arvore* raiz)
 
 arvore* limpar(no* tabuleiro, arvore* raiz)
 {
-  /*
-  Esta funcao limpa os filhos de um no de arvore raiz 
-  */
   no* tab = tabuleiro;
   arvore* root, *temp;
 
@@ -403,51 +420,39 @@ arvore* limpar(no* tabuleiro, arvore* raiz)
 
 arvore* percorrerArvore (arvore* raiz, no* tabuleiro, int limite)
 {
-  /* 
-  Esta funcao percorre a arvore de backtracking
-  Para saber se o no atual precisa criar mais filhos
-  ou nao, ela usa um contador limite, que indica
-  */
-
   no* tab = tabuleiro;
   arvore* root = raiz;
 
-  showTree(root);
-
-  if 
-  (
-    tab == NULL || 
-    root == NULL
-  )
-    /*chegou ao limite*/
+  if (tab == NULL || root == NULL)
     pass();
-
   else if 
   (
     root != NULL &&
     root->vez <= limite
   )
   {
-    /*ainda não chegou ao limite*/
+    //ainda não chegou ao limite
     puts("@percorrer");
     raiz = popularArvore(raiz);
     root = raiz->filho;
+    showTree(raiz);
+    showTree(root);
+    /*
+    while (tab->estado != 0 && root != NULL)
+    {
+      root = root->irmao;
+      tab = mover(tab, root); 
+    }
+    */
     tab = mover(tab, root);
     root = percorrerArvore(root, tab, limite);
   }
 
-  fflush(stdout);
   return root;
 }
 
 bool jogar (no* tabuleiro)
 {
-  /*
-  Esta funcao joga o jogo. Ela cria uma lista de posicoes
-  prioritarias e move o bot tab ao longo do tabuleiro
-  aa medida que a arvore backtrack (em geral, representada
-  por root) pede.
-  */
   no* prioridade = definirPrioridades(tabuleiro);
   arvore* backtrack = plantarArvore(NULL);
   arvore* root = backtrack->filho = plantarArvore(backtrack);
@@ -467,6 +472,8 @@ bool jogar (no* tabuleiro)
   root->pos[0] = tab->pos[0];
   root->pos[1] = tab->pos[1];
   root->vez = 1;
+  showNode(tab);
+  showNode(pdd);
 
   while 
   (
@@ -474,9 +481,7 @@ bool jogar (no* tabuleiro)
     root != NULL
   )
   {
-
     temp = root = percorrerArvore(root, tab, limite);
-
     if 
     (
       root->pos[0] == pdd->pos[0] &&
@@ -484,32 +489,40 @@ bool jogar (no* tabuleiro)
       root->vez == pdd->info
     )
     {
-      /*chegou aa posicao de prioridade*/
       puts("sucess");
       tab = pdd->endereco;
       pdd = pdd->prox;
       if (pdd != NULL)
         limite = pdd->info - tab->info;
     }
-    else if (root->irmao != NULL)
+    else if (root != NULL)
     {
-      /*nao chegou a posicao de prioridade
-        tentar o irmao*/
       puts("brother");
       root = root->irmao;
-
+      //tab = mover(tab, root);
       showNode(tab);
       showTree(root);
+      showTree(temp);
     }
-    else 
+    else if (temp->pai != NULL)
     {
-      /*nao chegou aa posicao de prioridade
-        tentar o ultimo irmao*/
-      puts("last brother");
-      root = percorrerArvore(root->irmao, tab, limite);
-      if (root == NULL)
-        root = temp->pai->irmao;
+      puts("father");
+      showTree(temp);
+      root = limpar(tab, temp->pai);
+      temp = root = root->irmao;
     }
+    else
+    {
+      puts("exception");
+      /*
+      puts("exception");
+      do {root = temp->pai;}
+      while (root->pai->irmao == NULL && root->pai != NULL);
+      if (root->pai == NULL)
+        root = NULL;
+      #btw we 697 lines by now*/
+      pass();
+    }    
   }
 
   puts("\nFINAL PRINT:");

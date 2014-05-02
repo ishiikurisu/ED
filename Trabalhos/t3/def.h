@@ -20,7 +20,7 @@ typedef struct arvore {
   struct arvore* irmao;
 } arvore;
 
-typedef struct fila {
+typedef struct {
   no* inicio;
   no* fim;
 } fila;
@@ -38,7 +38,6 @@ no* criarTabuleiro(no* tabuleiro)
 
   return tabuleiro;
 }
-
 
 arvore* plantarArvore (arvore *pai)
 {
@@ -65,8 +64,8 @@ void escreverArvore (arvore* raiz)
 {
   printf
   (
-    "%d:%p:%p:%p\t%d:%d\n",
-    raiz->vez, raiz, raiz->pai, raiz->irmao, 
+    "%d:%p:%p:%p:%p\t%d:%d\n",
+    raiz->vez, raiz, raiz->pai, raiz->irmao, raiz->filho, 
     raiz->pos[1], raiz->pos[0]
   );
   if (raiz->filho != NULL)

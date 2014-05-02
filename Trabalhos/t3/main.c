@@ -1,3 +1,13 @@
+/*
+Universidade de Brasilia
+Departamento de Ciencia da Computacao
+Estruturas de Dados
+Projeto 3
+Alunos:
+  Cristiano Silva Jr. 13/0070629
+  Juliana Lemos       13/00*****
+*/
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -10,7 +20,6 @@
 int tamanho = 0;
 
 #include "def.h"
-//#include "jogar.h"
 #include "jogar.h"
 
 
@@ -33,7 +42,6 @@ void lerArquivo (no *tabuleiro)
   fp = fopen("file.txt", "r");
 
   /*leitura do tamanho*/
-  puts("leitura do tamanho");
   do
   {
     i++;
@@ -42,15 +50,12 @@ void lerArquivo (no *tabuleiro)
   while (valor[i] != ' ' && valor[i] != '\n');
   
   /*alocacao de memoria*/
-  puts("alocacao");
   for(i = i-1; i >= 0; i--, j++)
     tamanho += (valor[i] - 48) * mult10(j);
 
   tab = tabuleiro->prox = (no*) malloc(sizeof(no));
 
   /*leitura da matriz*/
-  puts("atribuicao");
-
   i = j = x = y = 0;
   while(!feof(fp))
   {
@@ -101,13 +106,16 @@ int main ()
 {
   no* tabuleiro;
 
+  clear();
   tabuleiro = criarTabuleiro(tabuleiro);
   lerArquivo(tabuleiro);
+  printf("TABULEIRO INICIAL:\n");
   mostrar(tabuleiro);
+
   if (jogar(tabuleiro))
     puts("\nSOLUCAO: ");
   else
-    puts("ESTE TABULEIRO NÃO POSSUI SOLUÇÃO: ");
+    puts("\nESTE TABULEIRO NÃO POSSUI SOLUÇÃO: ");
   mostrar(tabuleiro);
 
   return 0;
