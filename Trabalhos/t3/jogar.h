@@ -406,13 +406,12 @@ arvore* percorrerArvore (arvore* raiz, no* tabuleiro, int limite)
   /* 
   Esta funcao percorre a arvore de backtracking
   Para saber se o no atual precisa criar mais filhos
-  ou nao, ela usa um contador limite, que indica
+  ou nao, ela usa um contador limite, que indica o 
+  numero necessario de movimentos a fazer
   */
 
   no* tab = tabuleiro;
   arvore* root = raiz;
-
-  showTree(root);
 
   if 
   (
@@ -454,7 +453,6 @@ bool jogar (no* tabuleiro)
   arvore* temp;
   no* pdd = prioridade->prox;
   no* tab = tabuleiro;
-  no* objetivo;
   int limite;
 
   /*
@@ -507,8 +505,20 @@ bool jogar (no* tabuleiro)
         tentar o ultimo irmao*/
       puts("last brother");
       root = percorrerArvore(root->irmao, tab, limite);
-      if (root == NULL)
-        root = temp->pai->irmao;
+      if (tab == NULL)
+        tab = tabuleiro->prox;
+      if (root == NULL) {
+        while 
+        (
+          temp->pai != NULL &&
+          temp->pai->irmao == NULL
+        )
+          temp = temp->pai;
+        if (temp->pai != NULL)
+          root = temp->pai->irmao;
+        if (root != NULL)
+          tab = mover(tab,root);
+      }
     }
   }
 
