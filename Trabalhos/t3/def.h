@@ -14,6 +14,7 @@ typedef struct no {
 typedef struct arvore {
   int vez;
   int pos[2];
+  int estado;
   struct arvore* pai;
   struct arvore* filho;
   struct arvore* irmao;
@@ -43,7 +44,7 @@ arvore* plantarArvore (arvore *pai)
 {
   arvore* raiz = (arvore*) malloc(sizeof(arvore));
 
-  raiz->vez = 1;
+  raiz->vez = raiz->estado = 0;
   raiz->pai = pai;
   raiz->filho = NULL;
   raiz->irmao = NULL;
@@ -59,3 +60,53 @@ fila* criarFila (no* comeco, no* final) {
 
   return lista;
 }
+
+void escreverArvore (arvore* raiz)
+{
+  printf
+  (
+    "%d:%p:%p:%p\t%d:%d\n",
+    raiz->vez, raiz, raiz->pai, raiz->irmao, 
+    raiz->pos[1], raiz->pos[0]
+  );
+  if (raiz->filho != NULL)
+    escreverArvore(raiz->filho);
+  
+  if (raiz->irmao != NULL)
+    escreverArvore(raiz->irmao);
+
+  return;
+}
+
+void finalPrint (no* tabuleiro, no* prioridade, arvore* raiz)
+{
+  no *tab = tabuleiro, *pdd = prioridade;
+  arvore *root = raiz;
+
+  puts ("TABULEIRO:");
+  while (tab != NULL) {
+    printf
+    (
+      "%d:%p:%d:%d\n",
+      tab->info, tab, tab->pos[1], tab->pos[0]
+    );
+    tab = tab->prox;
+  }
+
+  puts ("PRIORIDADE:");
+  while (pdd != NULL) {
+    printf
+    (
+      "%d:%p:%p:%d:%d\n",
+      pdd->info, pdd, pdd->endereco, pdd->pos[1], pdd->pos[0]
+    );
+    pdd = pdd->prox;
+  }
+
+  puts ("ARVORE:");
+  escreverArvore(raiz);
+
+  puts("===");
+  return;
+}
+

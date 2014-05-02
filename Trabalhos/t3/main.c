@@ -1,6 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#ifdef win32
+#define clear() system("cls")
+#else
+#define clear() system("clear")
+#endif
+
 int tamanho = 0;
 
 #include "def.h"
@@ -99,7 +105,7 @@ int main ()
   lerArquivo(tabuleiro);
   mostrar(tabuleiro);
   if (jogar(tabuleiro))
-    puts("SOLUCAO: ");
+    puts("\nSOLUCAO: ");
   else
     puts("ESTE TABULEIRO NÃO POSSUI SOLUÇÃO: ");
   mostrar(tabuleiro);
