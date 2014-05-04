@@ -80,7 +80,6 @@ void escreverArvore (arvore* raiz)
 void finalPrint (no* tabuleiro, no* prioridade, arvore* raiz)
 {
   no *tab = tabuleiro, *pdd = prioridade;
-  arvore *root = raiz;
 
   puts ("TABULEIRO:");
   while (tab != NULL) {

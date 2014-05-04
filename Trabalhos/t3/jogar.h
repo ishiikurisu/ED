@@ -56,8 +56,6 @@ no* caminhar (no* tabuleiro, int passos)
     for (i = 0; i < passos; i++)
     {
       tab = tab->prox;
-      printf("st%d:", i);
-      showNode(tab);
     }
   else
   {
@@ -65,12 +63,9 @@ no* caminhar (no* tabuleiro, int passos)
     for (i = 0; i < passos; i++)
     {
       tab = tab->ant;
-      printf("st%d:", i);
-      showNode(tab);
     }
   }
 
-  puts(" ");
   return tab;
 }
 
@@ -162,7 +157,7 @@ arvore* popularArvore (arvore *raiz)
   a variavel raiz se encontra.
   */
   arvore* root = raiz;
-  bool flag = false; //tem filhos?
+  bool flag = false; /*tem filhos?*/
 
   if (root == NULL)
     return NULL;
@@ -176,7 +171,7 @@ arvore* popularArvore (arvore *raiz)
 
     if (!flag) 
     {
-      //não tem filhos
+      /*não tem filhos*/
       root = raiz->filho = plantarArvore(raiz);
       flag = !flag;
     }
@@ -218,7 +213,6 @@ arvore* popularArvore (arvore *raiz)
   {
     if (!flag) 
     {
-      //não tem filhos
       root = raiz->filho = plantarArvore(raiz);
       flag = !flag;
     }
@@ -259,7 +253,6 @@ arvore* popularArvore (arvore *raiz)
   {
     if (!flag) 
     {
-      //não tem filhos
       root = raiz->filho = plantarArvore(raiz);
       flag = !flag;
     }
@@ -281,7 +274,6 @@ arvore* popularArvore (arvore *raiz)
   {
     if (!flag) 
     {
-      //não tem filhos
       root = raiz->filho = plantarArvore(raiz);
       flag = !flag;
     }
@@ -302,7 +294,6 @@ arvore* popularArvore (arvore *raiz)
   {
     if (!flag) 
     {
-      //não tem filhos
       root = raiz->filho = plantarArvore(raiz);
       flag = !flag;
     }
@@ -324,7 +315,6 @@ arvore* popularArvore (arvore *raiz)
   {
     if (!flag) 
     {
-      //não tem filhos
       root = raiz->filho = plantarArvore(raiz);
       flag = !flag;
     }
@@ -357,7 +347,6 @@ no* mover (no* tabuleiro, arvore* raiz)
     return NULL;
 
   passos = decidirPassos(tab, root);
-  printf("st:%d\t", passos);
   tab = caminhar(tab, passos);
 
   if (tab->estado == 0)
@@ -366,8 +355,6 @@ no* mover (no* tabuleiro, arvore* raiz)
     tab->estado = 1;
   }
 
-  printf("@mover:");
-  showNode(tab);
   return tab; 
 }
 
@@ -428,14 +415,12 @@ arvore* percorrerArvore (arvore* raiz, no* tabuleiro, int limite)
   )
   {
     /*ainda não chegou ao limite*/
-    puts("@percorrer");
     raiz = popularArvore(raiz);
     root = raiz->filho;
     tab = mover(tab, root);
     root = percorrerArvore(root, tab, limite);
   }
 
-  fflush(stdout);
   return root;
 }
 
@@ -455,10 +440,6 @@ bool jogar (no* tabuleiro)
   no* tab = tabuleiro;
   int limite;
 
-  /*
-  if (prioridade->endereco->info != 1)
-    FAZER O PRIMEIRO MOVIMENTO
-  */
   tab = pdd->endereco;
   pdd = pdd->prox;
   limite = pdd->endereco->info - tab->info;
@@ -483,7 +464,6 @@ bool jogar (no* tabuleiro)
     )
     {
       /*chegou aa posicao de prioridade*/
-      puts("sucess");
       tab = pdd->endereco;
       pdd = pdd->prox;
       if (pdd != NULL)
@@ -493,17 +473,12 @@ bool jogar (no* tabuleiro)
     {
       /*nao chegou a posicao de prioridade
         tentar o irmao*/
-      puts("brother");
       root = root->irmao;
-
-      showNode(tab);
-      showTree(root);
     }
     else 
     {
       /*nao chegou aa posicao de prioridade
         tentar o ultimo irmao*/
-      puts("last brother");
       root = percorrerArvore(root->irmao, tab, limite);
       if (tab == NULL)
         tab = tabuleiro->prox;
@@ -522,15 +497,8 @@ bool jogar (no* tabuleiro)
     }
   }
 
-  puts("\nFINAL PRINT:");
-  finalPrint(tabuleiro, prioridade, backtrack);
-
   if (pdd == NULL)
     return true;
-  
-  /*que tal não fazer o primeiro movimento
-    e somente preencher os espaços vazios
-    dos dois lados?*/
-  /*PREENCHER ESPAÇOS VAZIOS*/
+
   return false;
 }

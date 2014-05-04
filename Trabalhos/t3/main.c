@@ -5,7 +5,7 @@ Estruturas de Dados
 Projeto 3
 Alunos:
   Cristiano Silva Jr. 13/0070629
-  Juliana Lemos       13/00*****
+  Juliana Lemos       13/0029971
 */
 
 #include <stdlib.h>
@@ -107,16 +107,19 @@ int main ()
   no* tabuleiro;
 
   clear();
+  printf("NOMEIE SEU ARQUIVO \"file.txt\" ANTES DE USAR.\nAPERTE \"ENTER\" PARA COMECAR");
+  getchar();
+
   tabuleiro = criarTabuleiro(tabuleiro);
   lerArquivo(tabuleiro);
   printf("TABULEIRO INICIAL:\n");
-  mostrar(tabuleiro);
+  mostrar(tabuleiro->prox);
 
   if (jogar(tabuleiro))
     puts("\nSOLUCAO: ");
   else
     puts("\nESTE TABULEIRO NÃO POSSUI SOLUÇÃO: ");
-  mostrar(tabuleiro);
+  mostrar(tabuleiro->prox);
 
   return 0;
 }
