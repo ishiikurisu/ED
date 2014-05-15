@@ -1,0 +1,122 @@
+Ah		Arquivo origem: 1	Frequencia: 1
+Alvejei		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+Cara		Arquivo origem: 1	Frequencia: 1
+Causa		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+Corinto		Arquivo origem: 1	Frequencia: 1
+Curvelo		Arquivo origem: 1	Frequencia: 1
+Deus		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+Dono		Arquivo origem: 1	Frequencia: 1
+Lugar		Arquivo origem: 1	Frequencia: 1
+Mataram		Arquivo origem: 1	Frequencia: 1
+Me		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+Mesmo		Arquivo origem: 2	Frequencia: 1
+NONADA		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+O		Arquivo origem: 1	Frequencia: 2
+Olhe		Arquivo origem: 1	Frequencia: 1
+Povo		Arquivo origem: 1	Frequencia: 1
+QUE		Arquivo origem: 1	Frequencia: 1
+SENHOR		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+TIROS		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+Todo		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+Toleima		Arquivo origem: 1	Frequencia: 1
+Urucuia		Arquivo origem: 1	Frequencia: 2
+Vieram		Arquivo origem: 1	Frequencia: 1
+acerto		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+altas		Arquivo origem: 1	Frequencia: 1
+armas		Arquivo origem: 1	Frequencia: 1
+arrebitado		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+arredado		Arquivo origem: 1	Frequencia: 1
+arrocho		Arquivo origem: 1	Frequencia: 1
+autoridade		Arquivo origem: 1	Frequencia: 1
+avistar		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+baixo		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+bezerro		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 4
+branco		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+briga		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+cachorrada		Arquivo origem: 1	Frequencia: 1
+cachorro		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+campos		Arquivo origem: 1	Frequencia: 1
+cara		Arquivo origem: 1	Frequencia: 1
+carecem		Arquivo origem: 1	Frequencia: 1
+casa		Arquivo origem: 1	Frequencia: 1
+cedi		Arquivo origem: 1	Frequencia: 1
+certas		Arquivo origem: 1	Frequencia: 1
+chamar		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+como		Arquivo origem: 2	Frequencia: 1
+criminoso		Arquivo origem: 1	Frequencia: 1
+cristo		Arquivo origem: 1	Frequencia: 1
+defeito		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+dele		Arquivo origem: 1	Frequencia: 1
+demais		Arquivo origem: 1	Frequencia: 1
+demo		Arquivo origem: 1	Frequencia: 1
+dentro		Arquivo origem: 1	Frequencia: 1
+depois		Arquivo origem: 1	Frequencia: 1
+desde		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+determinaram		Arquivo origem: 1	Frequencia: 1
+deu		Arquivo origem: 1	Frequencia: 1
+dez		Arquivo origem: 1	Frequencia: 1
+dia		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+disseram		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+dito		Arquivo origem: 1	Frequencia: 1
+divulga		Arquivo origem: 1	Frequencia: 1
+dizem		Arquivo origem: 1	Frequencia: 1
+dum		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+eles		Arquivo origem: 1	Frequencia: 1
+emprestar		Arquivo origem: 1	Frequencia: 1
+era		Arquivo origem: 1	Frequencia: 1
+erroso		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+esteja		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+eu		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+fechos		Arquivo origem: 1	Frequencia: 1
+feito		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+figurava		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+fim		Arquivo origem: 1	Frequencia: 1
+fora		Arquivo origem: 1	Frequencia: 1
+foram		Arquivo origem: 1	Frequencia: 1
+gente		Arquivo origem: 1	Frequencia: 1
+gerais		Arquivo origem: 1	Frequencia: 1
+gosto		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+homem		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+instantaneamente		Arquivo origem: 1	Frequencia: 1
+jesus		Arquivo origem: 1	Frequencia: 1
+latir		Arquivo origem: 1	Frequencia: 1
+maior		Arquivo origem: 1	Frequencia: 1
+mal		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+minhas		Arquivo origem: 1	Frequencia: 1
+mira		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+mocidade		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+morador		Arquivo origem: 1	Frequencia: 1
+mortos		Arquivo origem: 1	Frequencia: 1
+nasceu		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+nem		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 3
+oestes		Arquivo origem: 1	Frequencia: 1
+olhos		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+ouviu		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+pastos		Arquivo origem: 1	Frequencia: 1
+pega		Arquivo origem: 1	Frequencia: 1
+pessoa		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+pode		Arquivo origem: 1	Frequencia: 1
+primeiro		Arquivo origem: 1	Frequencia: 1
+quando		Arquivo origem: 1	Frequencia: 1
+quintal		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+quinze		Arquivo origem: 1	Frequencia: 1
+quis		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+ri		Arquivo origem: 1	Frequencia: 1
+rindo		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+risadas		Arquivo origem: 1	Frequencia: 1
+rumo		Arquivo origem: 1	Frequencia: 1
+sei		Arquivo origem: 1	Frequencia: 1
+senhor		Arquivo origem: 1	Frequencia: 1
+ser		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+situado		Arquivo origem: 1	Frequencia: 1
+tem		Arquivo origem: 1	Frequencia: 1
+tenho		Arquivo origem: 1	Frequencia: 1
+terras		Arquivo origem: 1	Frequencia: 1
+tiro		Arquivo origem: 1	Frequencia: 1
+topar		Arquivo origem: 1	Frequencia: 1
+torar		Arquivo origem: 1	Frequencia: 1
+um		Arquivo origem: 1	Frequencia: 1
+verdade		Arquivo origem: 1	Frequencia: 1
+vieram		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+viu		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+vive		Arquivo origem: 1	Frequencia: 1
