@@ -6,7 +6,7 @@
 #define pi (3.1415926535)
 /*Célula contendo um ponteiro para a palavra, sua quantidade e 
 ponteiro para o proximo elemento*/
-#define MAX_ARQUIV 2
+#define MAX_ARQUIV 10
 /*proximo == filho direita
 anterior == filho esquerda*/
 struct lista
@@ -301,7 +301,7 @@ Arvore** incluir_hashing(Arvore** vetor,Arvore* tree,int maior)
     {
         vetor=incluir_hashing(vetor,tree->anterior,maior);
         int index = (hash(tree->palavra) % maior);
-        printf("%d\n", index);
+        //printf("%d\n", index);
         Arvore* No = (Arvore*)malloc(sizeof(Arvore));
         if (No==NULL)
         {
@@ -410,8 +410,53 @@ void estatistica (Arvore** vetor,int menor)
         }
         imprime_hash_doc(vetor[i],menor,fp);
     }
+    printf("Olá\n");
     fprintf(fp, "Número total de colisões:%d\n", n_colisoes);
     fprintf(fp, "Número de elementos da maior lista de colisões:%d\n", maior_colisao+1);
     fprintf(fp, "Número total de palavras:%d\n", total_palavr);
     fprintf(fp, "Número máximo do índice:%d\n", menor);
+    fclose(fp);
+}
+/*Interagir com usuario*/
+void interagir_com_usuario (Arvore** vetor,int menor)
+{
+    char decisao;
+    do
+    {
+        printf("Informe a palavra\n");
+        char* palavra;
+        scanf("%s",palavra);
+        //printf("%s\n", palavra);
+        int flag = 0;
+        Arvore* desbravador = vetor[(hash(palavra)%menor)];
+        while(desbravador!=NULL)
+        {
+            if (strcmp(desbravador->palavra,palavra)==0)
+            {
+                flag=1;
+                break;
+            }
+            desbravador=desbravador->proximo;
+        }
+        if (flag==0)
+        {
+            printf("Palavra não encontrada\n");
+        }
+        else
+        {
+            printf("Palavra encontrada nos arquivos:\n");
+            int i;
+            for ( i = 0; i < MAX_ARQUIV; ++i)
+            {
+                if (desbravador->arquivo_origem[i])
+                {
+                    printf("%d\t", i+1);
+                }
+            }
+            printf("\n");
+        }
+        printf("Deseja continua? (s/n)\n");
+        scanf(" %c",&decisao);
+    }
+    while(decisao=='s');
 }

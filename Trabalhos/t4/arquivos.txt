@@ -1,2 +1,11 @@
-./textos/doc2.txt
 ./textos/doc1.txt
+./textos/doc2.txt
+./textos/doc3.txt
+./textos/doc4.txt
+./textos/doc5.txt
+./textos/doc6.txt
+./textos/doc7.txt
+./textos/doc8.txt
+./textos/doc9.txt
+./textos/doc10.txt
+

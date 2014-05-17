@@ -16,15 +16,15 @@ void main(int argc, char const *argv[])
 	arvore_geral = gera_indice_invertido(Files);
 	Arvore** vetor_de_hash = hashing(arvore_geral,menor);
 	int i;
-	printf("Inicio hash\n");
-	for (i = 0; i < menor; ++i)
+	//printf("Inicio hash\n");
+	/*for (i = 0; i < menor; ++i)
 	{
 		printf("%d\n", i);
 		imprime_hash(vetor_de_hash[i]);
 		printf("\n");
-	}
+	}*/
 	estatistica(vetor_de_hash,menor);
+	interagir_com_usuario(vetor_de_hash,menor);
 	fecha_arquivos(fp,Files);
-	printf("%d\n", menor);
 	//return 0;
 }

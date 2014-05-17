@@ -1,122 +1,637 @@
-Ah		Arquivo origem: 1	Frequencia: 1
+Agora		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+Ah		Arquivo origem: 2	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 9	Arquivo origem: 10	Frequencia: 10
+Ainda		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+Alma		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
 Alvejei		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-Cara		Arquivo origem: 1	Frequencia: 1
+Apre		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+Aristides		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 4
+Arre		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+Arremisturado		Arquivo origem: 6	Arquivo origem: 7	Frequencia: 2
+Ave		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+Bem		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+Bofe		Arquivo origem: 10	Frequencia: 1
+Cara		Arquivo origem: 2	Frequencia: 1
 Causa		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-Corinto		Arquivo origem: 1	Frequencia: 1
-Curvelo		Arquivo origem: 1	Frequencia: 1
-Deus		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-Dono		Arquivo origem: 1	Frequencia: 1
-Lugar		Arquivo origem: 1	Frequencia: 1
-Mataram		Arquivo origem: 1	Frequencia: 1
+Chico		Arquivo origem: 4	Frequencia: 1
+Compadre		Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 9	Arquivo origem: 10	Frequencia: 4
+Corinto		Arquivo origem: 2	Frequencia: 1
+Cujo		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+Curralinho		Arquivo origem: 9	Frequencia: 1
+Curvelo		Arquivo origem: 2	Frequencia: 1
+De		Arquivo origem: 9	Frequencia: 1
+Detesto		Arquivo origem: 10	Frequencia: 1
+Deus		Arquivo origem: 1	Arquivo origem: 2	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 10	Frequencia: 5
+Diabo		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+Diga		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 7
+Diverjo		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+Do		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+Doideira		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+Dono		Arquivo origem: 2	Frequencia: 1
+Dou		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+E		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+Em		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Frequencia: 4
+Enfim		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+Essas		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+Esses		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+Estado		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+Estrumes		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+Eu		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Frequencia: 6
+Evangelhos		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+Explico		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 3
+Fosse		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+Francisco		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+Governo		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+Hem		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 10	Frequencia: 8
+Inda		Arquivo origem: 9	Frequencia: 1
+Inveja		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+Ipe		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+Lucas		Arquivo origem: 9	Frequencia: 1
+Lugar		Arquivo origem: 2	Frequencia: 1
+Mal		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+Mansa		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+Mas		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 11
+Mataram		Arquivo origem: 2	Frequencia: 1
+Matias		Arquivo origem: 10	Frequencia: 1
 Me		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-Mesmo		Arquivo origem: 2	Frequencia: 1
+Melhor		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+Mesmo		Arquivo origem: 1	Frequencia: 1
+Mestre		Arquivo origem: 9	Frequencia: 1
+Mindubim		Arquivo origem: 10	Frequencia: 1
 NONADA		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-O		Arquivo origem: 1	Frequencia: 2
-Olhe		Arquivo origem: 1	Frequencia: 1
-Povo		Arquivo origem: 1	Frequencia: 1
-QUE		Arquivo origem: 1	Frequencia: 1
+Nenhum		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+Nunca		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+O		Arquivo origem: 2	Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 9
+Olhe		Arquivo origem: 2	Frequencia: 1
+Pois		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 8
+Povo		Arquivo origem: 2	Frequencia: 1
+QUE		Arquivo origem: 2	Frequencia: 1
+Que		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+Quem		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+Raciocinar		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+Reza		Arquivo origem: 10	Frequencia: 1
+Rezo		Arquivo origem: 10	Frequencia: 1
+Rio		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 6
+Rita		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
 SENHOR		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+Santa		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+Santos		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+Sei		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+Senhor		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+Sofro		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+Soletrei		Arquivo origem: 9	Frequencia: 1
+Solto		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+Soziano		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+Sua		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
 TIROS		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+Tanta		Arquivo origem: 9	Frequencia: 1
+Tem		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 3
+Tempo		Arquivo origem: 9	Frequencia: 1
 Todo		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-Toleima		Arquivo origem: 1	Frequencia: 1
-Urucuia		Arquivo origem: 1	Frequencia: 2
-Vieram		Arquivo origem: 1	Frequencia: 1
+Toleima		Arquivo origem: 2	Frequencia: 1
+Tomara		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+Urucuia		Arquivo origem: 2	Frequencia: 2
+Vaca		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+Vale		Arquivo origem: 10	Frequencia: 1
+Valor		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+Vereda		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+Vieram		Arquivo origem: 2	Frequencia: 1
+Vito		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+Viver		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+Vote		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+a		Arquivo origem: 3	Frequencia: 3
 acerto		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-altas		Arquivo origem: 1	Frequencia: 1
-armas		Arquivo origem: 1	Frequencia: 1
+aconselhar		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+acredita		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+adiante		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+adjutorar		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+afamam		Arquivo origem: 10	Frequencia: 1
+afiada		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+agora		Arquivo origem: 3	Frequencia: 1
+ainda		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+ajudar		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+alma		Arquivo origem: 10	Frequencia: 1
+almanaque		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+almargem		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+alta		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+altas		Arquivo origem: 2	Frequencia: 1
+amargando		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+amontar		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+analfabeto		Arquivo origem: 9	Frequencia: 1
+anunciou		Arquivo origem: 4	Frequencia: 1
+aos		Arquivo origem: 3	Frequencia: 1
+aparecido		Arquivo origem: 4	Frequencia: 1
+apreceio		Arquivo origem: 9	Frequencia: 1
+aprova		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 10	Frequencia: 9
+aquietar		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+aragem		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+armas		Arquivo origem: 2	Frequencia: 1
+arranjadas		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
 arrebitado		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-arredado		Arquivo origem: 1	Frequencia: 1
-arrocho		Arquivo origem: 1	Frequencia: 1
-autoridade		Arquivo origem: 1	Frequencia: 1
+arredado		Arquivo origem: 2	Frequencia: 1
+arrepare		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+arrocho		Arquivo origem: 2	Frequencia: 1
+arruinado		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+artes		Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 9	Arquivo origem: 10	Frequencia: 4
+as		Arquivo origem: 3	Frequencia: 1
+assente		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+assim		Arquivo origem: 3	Frequencia: 1
+assina		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+assisado		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+autoridade		Arquivo origem: 2	Frequencia: 1
+avessos		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+avisando		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
 avistar		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+azangada		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+azougue		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
 baixo		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+banda		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+barranco		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 8
+bastava		Arquivo origem: 4	Frequencia: 1
+belos		Arquivo origem: 10	Frequencia: 1
+bem		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+besta		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
 bezerro		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 4
+bico		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+blimbilim		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+boa		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+bom		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+bonitos		Arquivo origem: 9	Frequencia: 1
+bonzinho		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
 branco		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+brava		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 6
+breu		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
 briga		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-cachorrada		Arquivo origem: 1	Frequencia: 1
+bruto		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+buritizal		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+cabeceiras		Arquivo origem: 4	Frequencia: 1
+cachoeira		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 12
+cachorrada		Arquivo origem: 2	Frequencia: 1
 cachorro		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-campos		Arquivo origem: 1	Frequencia: 1
-cara		Arquivo origem: 1	Frequencia: 1
-carecem		Arquivo origem: 1	Frequencia: 1
-casa		Arquivo origem: 1	Frequencia: 1
-cedi		Arquivo origem: 1	Frequencia: 1
-certas		Arquivo origem: 1	Frequencia: 1
+cada		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+caindo		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+caminho		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 9	Arquivo origem: 10	Frequencia: 5
+campear		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+campo		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+campos		Arquivo origem: 2	Frequencia: 1
+cantando		Arquivo origem: 10	Frequencia: 1
+capaz		Arquivo origem: 4	Frequencia: 1
+capeta		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+capiroto		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+capricho		Arquivo origem: 9	Frequencia: 1
+cara		Arquivo origem: 2	Frequencia: 1
+carantonho		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+carece		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 9	Arquivo origem: 10	Frequencia: 7
+carecem		Arquivo origem: 2	Frequencia: 1
+carinha		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+carne		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+cartilha		Arquivo origem: 9	Frequencia: 1
+casa		Arquivo origem: 2	Arquivo origem: 3	Arquivo origem: 4	Frequencia: 3
+cascavel		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+cavalo		Arquivo origem: 4	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+cedi		Arquivo origem: 2	Frequencia: 1
+certas		Arquivo origem: 2	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+chamado		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
 chamar		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-como		Arquivo origem: 2	Frequencia: 1
-criminoso		Arquivo origem: 1	Frequencia: 1
-cristo		Arquivo origem: 1	Frequencia: 1
+charadas		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+chefe		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+chorando		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+chorinho		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+clareia		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+cobra		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+coisa		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 9	Arquivo origem: 10	Frequencia: 7
+coitado		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+com		Arquivo origem: 9	Frequencia: 1
+come		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+comer		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+como		Arquivo origem: 1	Frequencia: 1
+comodidade		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+compadre		Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 10	Frequencia: 3
+completar		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+comum		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 9	Arquivo origem: 10	Frequencia: 5
+concedendo		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+condizente		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+conferindo		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+conforme		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+consome		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+contar		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+conversei		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+convive		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+corpo		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+corre		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+corvo		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+costeava		Arquivo origem: 4	Frequencia: 1
+crente		Arquivo origem: 10	Frequencia: 1
+crespos		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+criaturas		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+crime		Arquivo origem: 4	Frequencia: 1
+criminoso		Arquivo origem: 2	Frequencia: 1
+cristao		Arquivo origem: 10	Frequencia: 1
+cristo		Arquivo origem: 2	Frequencia: 1
+culturas		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+curial		Arquivo origem: 10	Frequencia: 1
+cursar		Arquivo origem: 9	Frequencia: 1
+custante		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+custosa		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+da		Arquivo origem: 3	Frequencia: 1
+daqui		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+de		Arquivo origem: 3	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 9	Frequencia: 13
+declare		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+decorei		Arquivo origem: 9	Frequencia: 1
 defeito		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-dele		Arquivo origem: 1	Frequencia: 1
-demais		Arquivo origem: 1	Frequencia: 1
-demo		Arquivo origem: 1	Frequencia: 1
-dentro		Arquivo origem: 1	Frequencia: 1
-depois		Arquivo origem: 1	Frequencia: 1
+definitivo		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+deixando		Arquivo origem: 3	Frequencia: 1
+dele		Arquivo origem: 2	Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 6
+demais		Arquivo origem: 2	Frequencia: 1
+demo		Arquivo origem: 2	Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 9
+dentro		Arquivo origem: 2	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 4
+depois		Arquivo origem: 2	Frequencia: 1
+descanso		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+desconfio		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
 desde		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-determinaram		Arquivo origem: 1	Frequencia: 1
-deu		Arquivo origem: 1	Frequencia: 1
-dez		Arquivo origem: 1	Frequencia: 1
-dia		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+desdoidar		Arquivo origem: 10	Frequencia: 1
+desejo		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+desendoidecer		Arquivo origem: 10	Frequencia: 1
+desfalam		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+desfaz		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+designados		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+despontar		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+dessas		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+desta		Arquivo origem: 3	Frequencia: 1
+deste		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 4
+determinaram		Arquivo origem: 2	Frequencia: 1
+deu		Arquivo origem: 2	Frequencia: 1
+devia		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+dez		Arquivo origem: 2	Frequencia: 1
+dia		Arquivo origem: 1	Arquivo origem: 2	Arquivo origem: 4	Frequencia: 3
+diabo		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 9	Arquivo origem: 10	Frequencia: 29
+dias		Arquivo origem: 3	Frequencia: 1
+diferente		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+diga		Arquivo origem: 3	Frequencia: 1
+digo		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 10
+direita		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
 disseram		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-dito		Arquivo origem: 1	Frequencia: 1
-divulga		Arquivo origem: 1	Frequencia: 1
-dizem		Arquivo origem: 1	Frequencia: 1
-dum		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-eles		Arquivo origem: 1	Frequencia: 1
-emprestar		Arquivo origem: 1	Frequencia: 1
-era		Arquivo origem: 1	Frequencia: 1
+ditado		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+dito		Arquivo origem: 2	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+divertimento		Arquivo origem: 4	Frequencia: 1
+divididas		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+divulga		Arquivo origem: 2	Frequencia: 1
+dizem		Arquivo origem: 2	Arquivo origem: 3	Arquivo origem: 4	Frequencia: 4
+do		Arquivo origem: 4	Frequencia: 1
+doce		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+dorme		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+doutrina		Arquivo origem: 10	Frequencia: 1
+dum		Arquivo origem: 1	Arquivo origem: 2	Arquivo origem: 4	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 6
+duma		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+ele		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 9
+eles		Arquivo origem: 2	Frequencia: 1
+em		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 7
+embrenho		Arquivo origem: 10	Frequencia: 1
+emendado		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+empresa		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+emprestar		Arquivo origem: 2	Frequencia: 1
+encarecido		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+encaveirada		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+encomenda		Arquivo origem: 10	Frequencia: 1
+engambelando		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+engolir		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+engordando		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+entenda		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+entisicou		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+era		Arquivo origem: 2	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 4
+errei		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
 erroso		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+esbarram		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+escolher		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+escorvas		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+escuta		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+esmo		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+esperava		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+esperto		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+espia		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+esses		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 4
+estabelecido		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+estado		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+este		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
 esteja		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-eu		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-fechos		Arquivo origem: 1	Frequencia: 1
+estragam		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+estranhez		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+estude		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+eu		Arquivo origem: 1	Arquivo origem: 2	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 7
+evita		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+executa		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+exemplos		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+existe		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 5
+exortar		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+explico		Arquivo origem: 10	Frequencia: 1
+faces		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+falso		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+fechos		Arquivo origem: 2	Frequencia: 1
+feio		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
 feito		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+feliz		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+fica		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
 figurava		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-fim		Arquivo origem: 1	Frequencia: 1
-fora		Arquivo origem: 1	Frequencia: 1
-foram		Arquivo origem: 1	Frequencia: 1
-gente		Arquivo origem: 1	Frequencia: 1
-gerais		Arquivo origem: 1	Frequencia: 1
+fim		Arquivo origem: 2	Frequencia: 1
+folhas		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+fora		Arquivo origem: 2	Arquivo origem: 4	Frequencia: 2
+foram		Arquivo origem: 2	Frequencia: 1
+forma		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 4
+formato		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+forme		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 4
+forro		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+fosse		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 3
+franco		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+franzido		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+fundo		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+gasturado		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+gente		Arquivo origem: 2	Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 9	Frequencia: 10
+gerais		Arquivo origem: 2	Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 9
+gloso		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+gordo		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
 gosto		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-homem		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-instantaneamente		Arquivo origem: 1	Frequencia: 1
-jesus		Arquivo origem: 1	Frequencia: 1
-latir		Arquivo origem: 1	Frequencia: 1
-maior		Arquivo origem: 1	Frequencia: 1
-mal		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-minhas		Arquivo origem: 1	Frequencia: 1
+gradas		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+grassa		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+grosso		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+grossura		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+hem		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+hinos		Arquivo origem: 10	Frequencia: 1
+homem		Arquivo origem: 1	Arquivo origem: 2	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 17
+homens		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+horrorosas		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+ia		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+igual		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+instantaneamente		Arquivo origem: 2	Frequencia: 1
+internos		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+invocar		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+isso		Arquivo origem: 3	Frequencia: 1
+jazendo		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+jesus		Arquivo origem: 2	Frequencia: 1
+jura		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+justo		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+ladino		Arquivo origem: 9	Frequencia: 1
+latim		Arquivo origem: 9	Frequencia: 1
+latir		Arquivo origem: 2	Frequencia: 1
+lei		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 3
+leitura		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+lhe		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+lidar		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+ligeira		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+livro		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+logogrifos		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+louco		Arquivo origem: 10	Frequencia: 1
+loucura		Arquivo origem: 10	Frequencia: 1
+louvou		Arquivo origem: 4	Frequencia: 1
+lugares		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+madeiras		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+magreza		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+maior		Arquivo origem: 2	Frequencia: 1
+mais		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+mal		Arquivo origem: 1	Arquivo origem: 2	Arquivo origem: 4	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 8
+maligno		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+mandioca		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 12
+mangar		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+mansa		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 6
+mapas		Arquivo origem: 9	Frequencia: 1
+maria		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+mata		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 11
+matos		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+meante		Arquivo origem: 9	Frequencia: 1
+meio		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 9	Frequencia: 6
+melancolias		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+menino		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 8
+mesmo		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 6
+mestre		Arquivo origem: 9	Frequencia: 1
+metodista		Arquivo origem: 10	Frequencia: 1
+minha		Arquivo origem: 3	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+minhas		Arquivo origem: 2	Frequencia: 1
+minutos		Arquivo origem: 4	Frequencia: 1
 mira		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+misturado		Arquivo origem: 8	Frequencia: 1
 mocidade		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-morador		Arquivo origem: 1	Frequencia: 1
-mortos		Arquivo origem: 1	Frequencia: 1
+morador		Arquivo origem: 2	Frequencia: 1
+moradores		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+moral		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+mortal		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+mortos		Arquivo origem: 2	Frequencia: 1
+motivos		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+mudas		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+muito		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 8
+mulher		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+mulheres		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+mundo		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 9	Arquivo origem: 10	Frequencia: 10
+nascendo		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+nascentes		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
 nasceu		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+nascido		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+navego		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+nega		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+nele		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
 nem		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 3
-oestes		Arquivo origem: 1	Frequencia: 1
-olhos		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+nenhum		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 9	Arquivo origem: 10	Frequencia: 12
+neste		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+nestes		Arquivo origem: 3	Frequencia: 1
+no		Arquivo origem: 3	Frequencia: 2
+nome		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+nomes		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 4
+normal		Arquivo origem: 4	Frequencia: 1
+nos		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+nosso		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 9
+num		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+o		Arquivo origem: 3	Frequencia: 6
+obrigado		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+oestes		Arquivo origem: 2	Frequencia: 1
+ofensas		Arquivo origem: 4	Frequencia: 1
+olhos		Arquivo origem: 1	Arquivo origem: 2	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+ora		Arquivo origem: 10	Frequencia: 1
+ordem		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+ossos		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+ou		Arquivo origem: 3	Frequencia: 2
+ouvir		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 3
 ouviu		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-pastos		Arquivo origem: 1	Frequencia: 1
-pega		Arquivo origem: 1	Frequencia: 1
-pessoa		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-pode		Arquivo origem: 1	Frequencia: 1
-primeiro		Arquivo origem: 1	Frequencia: 1
-quando		Arquivo origem: 1	Frequencia: 1
+padre		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 9	Arquivo origem: 10	Frequencia: 4
+pagava		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+paramenta		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+parece		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+parido		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+parou		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+parte		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 6	Frequencia: 3
+passagem		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+passar		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+passou		Arquivo origem: 4	Frequencia: 1
+pastos		Arquivo origem: 2	Frequencia: 1
+paz		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+pecador		Arquivo origem: 10	Frequencia: 1
+pecados		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+pedir		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 3
+pedras		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+pega		Arquivo origem: 2	Frequencia: 1
+peitos		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+pelas		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 5
+pena		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+penando		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+perdi		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+pergunta		Arquivo origem: 4	Frequencia: 1
+pergunte		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+perigoso		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+perversidades		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+pessoa		Arquivo origem: 1	Arquivo origem: 2	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 6
+pessoalmente		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+pessoas		Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 9	Frequencia: 3
+pior		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+plantas		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+pobre		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+pode		Arquivo origem: 2	Arquivo origem: 3	Frequencia: 2
+poder		Arquivo origem: 10	Frequencia: 1
+por		Arquivo origem: 3	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 4
+porco		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+porfalando		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+porque		Arquivo origem: 3	Frequencia: 1
+posso		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 3
+pouquim		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+pra		Arquivo origem: 3	Frequencia: 1
+prazer		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+prazido		Arquivo origem: 4	Frequencia: 1
+preces		Arquivo origem: 10	Frequencia: 1
+preso		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+preta		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 10	Frequencia: 3
+preto		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+primazia		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+primeiro		Arquivo origem: 2	Arquivo origem: 3	Arquivo origem: 4	Frequencia: 3
+principalmente		Arquivo origem: 10	Frequencia: 1
+principiou		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+proclamar		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+proseou		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+protegem		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+proveitosa		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+pudesse		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+puridade		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+qualquer		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+quando		Arquivo origem: 2	Arquivo origem: 3	Frequencia: 2
+quaresma		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+quase		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+que		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 13
+quem		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+quer		Arquivo origem: 3	Frequencia: 2
+querer		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 4
+quieta		Arquivo origem: 10	Frequencia: 1
 quintal		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-quinze		Arquivo origem: 1	Frequencia: 1
-quis		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-ri		Arquivo origem: 1	Frequencia: 1
+quinze		Arquivo origem: 2	Frequencia: 1
+quis		Arquivo origem: 1	Arquivo origem: 2	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 8
+ramos		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+rapaz		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+rasgar		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+rastreio		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+rebaixou		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+receio		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+redemunho		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+redobrar		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+refresca		Arquivo origem: 10	Frequencia: 1
+regra		Arquivo origem: 9	Frequencia: 1
+regula		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+render		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+replantada		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+respeito		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+retombando		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+reumatismo		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+revestido		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+rezar		Arquivo origem: 10	Frequencia: 1
+rezas		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+ri		Arquivo origem: 2	Frequencia: 1
+rico		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
 rindo		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-risadas		Arquivo origem: 1	Frequencia: 1
-rumo		Arquivo origem: 1	Frequencia: 1
-sei		Arquivo origem: 1	Frequencia: 1
-senhor		Arquivo origem: 1	Frequencia: 1
+risadas		Arquivo origem: 2	Frequencia: 1
+roncar		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+rua		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+ruim		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+rumo		Arquivo origem: 2	Frequencia: 1
+rupeia		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+sabe		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 5
+saber		Arquivo origem: 9	Frequencia: 1
+sabia		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+sacerdote		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+safado		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+sangue		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+sara		Arquivo origem: 10	Frequencia: 1
+satanazim		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+saudoso		Arquivo origem: 9	Frequencia: 1
+se		Arquivo origem: 3	Frequencia: 2
+secos		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+seguidas		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+seguir		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+sei		Arquivo origem: 2	Frequencia: 1
+seja		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+sem		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+seminarista		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+senhor		Arquivo origem: 2	Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 9	Arquivo origem: 10	Frequencia: 34
+senhorleitura		Arquivo origem: 7	Frequencia: 1
 ser		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-situado		Arquivo origem: 1	Frequencia: 1
-tem		Arquivo origem: 1	Frequencia: 1
-tenho		Arquivo origem: 1	Frequencia: 1
-terras		Arquivo origem: 1	Frequencia: 1
-tiro		Arquivo origem: 1	Frequencia: 1
-topar		Arquivo origem: 1	Frequencia: 1
-torar		Arquivo origem: 1	Frequencia: 1
-um		Arquivo origem: 1	Frequencia: 1
-verdade		Arquivo origem: 1	Frequencia: 1
+sertanejo		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+servidor		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+si		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 3
+sido		Arquivo origem: 4	Frequencia: 1
+significado		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+situado		Arquivo origem: 2	Frequencia: 1
+sobra		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+sofismado		Arquivo origem: 9	Frequencia: 1
+sofre		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+solte		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+sombrinha		Arquivo origem: 10	Frequencia: 1
+sorte		Arquivo origem: 9	Frequencia: 1
+sossega		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+sovas		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+suja		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+suma		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+suspende		Arquivo origem: 10	Frequencia: 1
+susto		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+tal		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 4
+talhar		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+tamanho		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+tece		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+tem		Arquivo origem: 2	Arquivo origem: 3	Arquivo origem: 4	Frequencia: 5
+temer		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+tenho		Arquivo origem: 2	Frequencia: 1
+teria		Arquivo origem: 4	Frequencia: 1
+terra		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+terras		Arquivo origem: 2	Frequencia: 1
+terreno		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+tiro		Arquivo origem: 2	Frequencia: 1
+toda		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 6	Frequencia: 5
+todo		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
+toma		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+topar		Arquivo origem: 2	Frequencia: 1
+torar		Arquivo origem: 2	Frequencia: 1
+tortas		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+tosse		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+tossura		Arquivo origem: 7	Arquivo origem: 8	Frequencia: 2
+tracei		Arquivo origem: 9	Frequencia: 1
+trem		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+tresmalho		Arquivo origem: 10	Frequencia: 1
+tudo		Arquivo origem: 6	Arquivo origem: 7	Frequencia: 2
+um		Arquivo origem: 2	Arquivo origem: 3	Arquivo origem: 4	Frequencia: 6
+usos		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+vale		Arquivo origem: 10	Frequencia: 1
+valia		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+vara		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+vargens		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+vazantes		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+velhice		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Arquivo origem: 9	Arquivo origem: 10	Frequencia: 6
+venenosas		Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 3
+vento		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+verdade		Arquivo origem: 2	Frequencia: 1
+vi		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Frequencia: 3
+viagem		Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 5
+vias		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
 vieram		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
+vige		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+vinte		Arquivo origem: 4	Frequencia: 1
+virgens		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+virtude		Arquivo origem: 10	Frequencia: 1
+virtudes		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
 viu		Arquivo origem: 1	Arquivo origem: 2	Frequencia: 2
-vive		Arquivo origem: 1	Frequencia: 1
+vive		Arquivo origem: 2	Frequencia: 1
+viver		Arquivo origem: 9	Arquivo origem: 10	Frequencia: 2
+vivo		Arquivo origem: 4	Arquivo origem: 5	Frequencia: 2
+volta		Arquivo origem: 3	Arquivo origem: 4	Arquivo origem: 5	Arquivo origem: 6	Frequencia: 4
+vosso		Arquivo origem: 5	Arquivo origem: 6	Arquivo origem: 7	Arquivo origem: 8	Frequencia: 4
+vou		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 4
+vozinha		Arquivo origem: 3	Arquivo origem: 4	Frequencia: 2
