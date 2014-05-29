@@ -1,0 +1,1 @@
+É necessário rodar como super usuário, para que seja permitida a manipulação de arquivos.

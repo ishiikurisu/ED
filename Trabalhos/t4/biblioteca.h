@@ -178,18 +178,47 @@ int acessa_arquivos (Arquivo* Files)
     }
     return menor;
 }
-unsigned long
-hash(unsigned char *str)
+//hashSax 24
+unsigned long hash(unsigned char *string) {
+  unsigned long sum = 0;
+  const unsigned long L = 33;
+  const unsigned long R = 1;
+  for(; *string!= '\0';++string ) {
+    sum= sum ^((sum<<L)+(sum>>R)+*string) ; 
+  }
+  return sum;
+}
+/*hashBerstein 22
+unsigned long hash(unsigned char *string) {
+  unsigned long sum = 0;
+  const unsigned long L = 3;
+  for(; *string!= '\0';++string ) {
+    sum= (( sum<< L) + sum) ^ *string ; 
+  }
+  return sum;
+}*/
+/*hashRabinKarp 26*/
+/*unsigned long hash(unsigned char *string) {
+    unsigned long sum = 0;
+    const int someprime = 31;
+    for(; *string!= '\0'; ++string ) {
+        sum= someprime * sum +  *string ;
+    }
+    return sum;
+}*/
+/*
+unsigned long hash(unsigned char *str)
 {
-    /*5381*/
-    unsigned long hash = 5381;
+    //5381
+    unsigned long hash = 71;
     int c;
 
     while (c = *str++)
-        hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
+        hash = ((hash << 5) + hash) + c; // hash * 33 + c 
 
     return hash;
-}
+}*/
+
 void fecha_arquivos(FILE* fp, Arquivo* Files)
 {
 
@@ -269,16 +298,17 @@ FILE* imprime_arvore (Arvore* tree, FILE* fp)
             if (tree->arquivo_origem[i])
             {
                 //printf("\tArquivo origem: %d", i+1);
-                fprintf(fp, "\tArquivo origem: %d", i+1);
+                fprintf(fp, "Arquivo origem:%d", i+1);
+                fprintf(fp, "\t");
             }
         }
         //printf("\tFrequencia: %d\n", tree->quantidade);
-        fprintf(fp, "\tFrequencia: %d\n", tree->quantidade);
+        fprintf(fp, "Frequencia:%d\n", tree->quantidade);
         imprime_arvore(tree->proximo,fp);
     }
     return fp;
 }
-Arvore* gera_indice_invertido(Arquivo* Files)
+void gera_indice_invertido(Arquivo* Files)
 {
     Arvore* tree=NULL;
     int i;
@@ -290,6 +320,139 @@ Arvore* gera_indice_invertido(Arquivo* Files)
     FILE* fp = fopen("IndInvert.txt", "w");
     rewind(fp);
     imprime_arvore(tree,fp);
+    fclose(fp);
+}
+int elevado (int base, int expoente)
+{
+    if (expoente == 0)
+    {
+        return 1;
+    }
+    int i;
+    int produto = base;
+    for (i = 1; i < expoente; ++i)
+    {
+        produto*=base;
+    }
+    return produto;
+}
+Arvore* adicionar_a_arvore (Arvore* tree, char* palavr_parcial,int* arquivos,int freq)
+{
+    if (tree==NULL)
+    {
+        Arvore* No = (Arvore*)malloc(sizeof(Arvore));
+        int i;
+        for (i = 0; i < MAX_ARQUIV; ++i)
+        {
+            No->arquivo_origem[i]=arquivos[i];
+        }
+        No->quantidade=freq;
+        (*No).palavra = (char*) malloc(sizeof(palavr_parcial));
+        if (No->palavra==NULL)
+        {
+            printf("No memory\n");
+            exit(1);
+        }
+        strcpy(No->palavra,palavr_parcial);
+        No->proximo=NULL;
+        No->anterior=NULL;
+        return No;
+    }
+    if (strcmp(palavr_parcial,tree->palavra)<0)
+    {
+        tree->anterior = adicionar_a_arvore(tree->anterior,palavr_parcial,arquivos,freq);
+        return tree;
+    }
+    else
+    {
+        tree->proximo = adicionar_a_arvore(tree->proximo,palavr_parcial,arquivos,freq);
+        return tree;
+    }
+}
+Arvore* le_indice_invertido()
+{
+    Arvore* tree=NULL;
+    FILE* fp = fopen("IndInvert.txt","r");
+    if (fp==NULL)
+    {
+        printf("Erro abertura arquivo!\n");
+        exit(1);
+    }
+    char desbrv;
+    char* palavr_parcial;
+    while((desbrv=fgetc(fp))!=EOF)
+    {
+        palavr_parcial = (char*)malloc(2*sizeof(char));
+        int i=1;
+        palavr_parcial[0]=desbrv;
+        while((desbrv=fgetc(fp))!=EOF && desbrv!='\t')
+        {
+            palavr_parcial = (char*)realloc(palavr_parcial,(2+i)*sizeof(char));
+            palavr_parcial[i]=desbrv;
+            ++i;
+        }
+        palavr_parcial[i]='\0';
+        //printf("%s\t", palavr_parcial);
+        int flag=0;
+        int arquivos[MAX_ARQUIV];
+        int freq;
+        for (i = 0; i < MAX_ARQUIV; ++i)
+        {
+            arquivos[i]=0;
+        }
+        while(!flag)
+        {
+            char* tipo = NULL;
+            i=0;
+            while(((desbrv=fgetc(fp))!=EOF) && (desbrv!=':'))
+            {
+                tipo = (char*)realloc(tipo,(2+i)*sizeof(char));
+                tipo[i]=desbrv;
+                ++i;
+            }
+            tipo[i]='\0';
+            //printf("%s\n", tipo);
+            if (strcmp(tipo,"Arquivo origem")!=0)
+            {
+                flag=1;
+            }
+            int* algarismos;
+            algarismos = (int*) malloc(sizeof(int));
+            if (algarismos==NULL)
+            {
+                printf("No memory!\n");
+                exit(1);
+            }
+            int j=0;
+            desbrv = fgetc(fp);
+            do
+            {
+                algarismos[j]=desbrv-48;
+                ++j;
+                algarismos=(int*)realloc(algarismos,(j+1)*sizeof(int));
+                desbrv=fgetc(fp);
+            }
+            while(desbrv!=EOF && desbrv!='\t' && desbrv!='\n');
+            int k;
+            int numero=0;
+            for (k = 0; k < j; ++k)
+            {
+                //printf("%d\n", algarismos[k]);
+                numero+= algarismos[k]*elevado(10,j-k-1);
+            }
+            //printf("%d\n", numero);
+            if (!flag)
+            {
+                arquivos[numero-1]=1;
+            }
+            else
+            {
+                freq=numero;
+            }
+        }
+        tree = adicionar_a_arvore(tree,palavr_parcial,arquivos,freq);
+        free(palavr_parcial);
+    }
     fclose(fp);
     return tree;
 }
@@ -388,6 +551,8 @@ void estatistica (Arvore** vetor,int menor)
     int total_palavr=0;
     int n_colisoes=0;
     int maior_colisao=0;
+    int num_maior_colisao;
+	int total_palavr_difer=0;
     int i;
     for (i = 0; i < menor; ++i)
     {
@@ -396,10 +561,12 @@ void estatistica (Arvore** vetor,int menor)
         {
             Arvore* desbravador=vetor[i];
             total_palavr+=desbravador->quantidade;
+			++total_palavr_difer;
             while(desbravador->proximo!=NULL)
             {
                 desbravador=desbravador->proximo;
                 total_palavr+=desbravador->quantidade;
+				++total_palavr_difer;
                 ++colisao_parcial;
                 ++n_colisoes;
             }
@@ -407,14 +574,22 @@ void estatistica (Arvore** vetor,int menor)
         if (colisao_parcial > maior_colisao)
         {
             maior_colisao = colisao_parcial;
+            num_maior_colisao=i;
         }
         imprime_hash_doc(vetor[i],menor,fp);
     }
-    printf("Olá\n");
     fprintf(fp, "Número total de colisões:%d\n", n_colisoes);
     fprintf(fp, "Número de elementos da maior lista de colisões:%d\n", maior_colisao+1);
     fprintf(fp, "Número total de palavras:%d\n", total_palavr);
+	fprintf(fp, "Número total de palavras diferentes:%d\n", total_palavr_difer);
     fprintf(fp, "Número máximo do índice:%d\n", menor);
+    system("clear");
+    printf("Número total de colisões:%d\n", n_colisoes);
+    printf("Número de elementos da maior lista de colisões:%d\n", maior_colisao+1);
+    printf("%d\n", num_maior_colisao);
+    printf("Número total de palavras:%d\n", total_palavr);
+    printf("Número total de palavras diferentes:%d\n", total_palavr_difer);
+    printf("Número máximo do índice:%d\n", menor);
     fclose(fp);
 }
 /*Interagir com usuario*/
@@ -458,5 +633,5 @@ void interagir_com_usuario (Arvore** vetor,int menor)
         printf("Deseja continua? (s/n)\n");
         scanf(" %c",&decisao);
     }
-    while(decisao=='s');
+    while(decisao=='s' || decisao=='S');
 }
