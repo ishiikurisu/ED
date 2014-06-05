@@ -9,6 +9,7 @@ typedef gennode gengraph;
 
 void pass(){return;}
 
+//UTILITIES
 gengraph* new_gengraph (gengraph* father) 
 {
   gengraph* vertice = (gengraph*) malloc(sizeof(gengraph));
@@ -50,6 +51,7 @@ gengraph* new_gengraph_connection (gengraph* gr_a, gengraph* gr_b)
   return a;
 }
 
+//ANALYSIS FUNCTIONS
 void show_sons (gengraph* father)
 {
   gengraph* vertice = father;
@@ -125,6 +127,7 @@ void gengraph_analisys (gengraph* father)
   }
 }
 
+//REMOTION FUNCTIONS
 gengraph* free_gengraph_right (gengraph* father, gengraph* bastard)
 {
   gengraph* walker, *follower;
@@ -196,4 +199,63 @@ void* delete_gennode (gengraph* to_delete)
   
   free(vertice);
   return NULL;
+}
+
+//WALKING FUNCTIONS
+bool is_in_list (gengraph* item, gennode* head)
+{
+  bool result = false;
+  gennode* walker = head;
+
+  if (item == NULL)
+    pass();
+  else while (walker != NULL && !result)
+  {
+    result = (walker->info == item)? true:false;
+    walker = walker->right;
+  }
+
+  return result;
+}
+
+void walk_graph (gengraph* father, gennode* sentinel)
+{
+  gengraph* vertex = father;
+
+  //exceptional case
+  if (father == NULL || is_in_list(father, sentinel)) 
+  {
+    if (father != NULL) printf("%p < > ", father);
+    return;
+  }
+
+  //list operations
+  if (sentinel == NULL)
+  {
+    sentinel = (gennode*) malloc(sizeof(gennode));
+    sentinel->right = sentinel->info = NULL;
+  }
+  else 
+  {
+    gennode* walker = sentinel;
+
+    while (walker->right != NULL) 
+      walker = walker->right;
+    walker = walker->right = (gennode*) malloc(sizeof(gennode));
+    walker->info = father;
+    walker->right = NULL;
+  }
+
+  printf("%p ", vertex);
+
+  //walking part
+  printf("< ");
+  while (vertex != NULL)
+  {
+    walk_graph(vertex->info, sentinel);
+    vertex = vertex->right;
+  }
+  printf("> ");
+
+  return;
 }

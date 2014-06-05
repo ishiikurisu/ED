@@ -1,27 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "boolean.h"
+
 #include "graph.h"
-
-bool contact ()
-{
-  bool key = true;
-  char option;
-
-  printf("a: add new node");
-  printf("c: create new node");
-
-  printf("what do you want to do now? ");
-  scanf("%c", &option);
-
-  switch (option)
-  {
-    case 'a':
-    break;
-  }
-
-  return key; 
-}
 
 int main ()
 {

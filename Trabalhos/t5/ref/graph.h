@@ -2,6 +2,10 @@
 #include "node.h"
 #endif
 
+#define bool int
+#define true 1
+#define false 0
+
 typedef node graph;
 
 graph* new_graph(graph* father)

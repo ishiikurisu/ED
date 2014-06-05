@@ -1,5 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
+
+#include "alias.h"
+#include "boolean.h"
 #include "graph_w_parents.h"
 
 int main ()
@@ -47,13 +50,9 @@ int main ()
   show_parents(a);
   show_parents(b);
   show_parents(c);
-
-  /*
-  puts("outline:");
-  gengraph_analisys(a);
-  gengraph_analisys(b);
-  gengraph_analisys(c);
-  */
+  puts("partial tree:");
+  walk_graph(a, NULL);
+  printf("\n");
 
   puts("the last move");
   b = delete_gennode(b);
@@ -63,6 +62,19 @@ int main ()
   show_parents(a);
   show_parents(b);
   show_parents(c);
+
+  puts("TREES: ");
+  walk_graph(a, NULL);
+
+  /*
+  puts("outline:");
+  gengraph_analisys(a);
+  gengraph_analisys(b);
+  gengraph_analisys(c);
+  */
   
+  //getchar();
+  printf("\n");
+  fflush(stdout);
   return 0;
 }
