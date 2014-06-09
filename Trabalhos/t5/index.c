@@ -29,16 +29,22 @@ Descricao:
   + adicionar_a_lista()
   + escrever_lista()
   + presente_na_lista()
+  + tamanho_lista()
 + FUNCOES DE GRAFO
   + novo_grafo()
   + nova_conexao()
   + mostrar_conexoes()
+  + trocar_amigo()
 + FUNCOES DE LIGACAO
   + identificar_amigo()
   + leitura_arquivo()
 + FUNCOES DE RANKING
+  + descobri_no_amigos()
   + preparar_loop()
+  + influenciar()
   + distribuir_influencia()
+  + ordenar_lista()
+  + escrever_ranking()
   + gerar_ranking()
 + FUNCOES PRINCIPAIS
   + main()
@@ -480,7 +486,58 @@ void distribuir_influencia(no* lista_amigos)
 /*geracao do ranking*/
 no* ordenar_lista(no* lista_amigos)
 {
-  return lista_amigos;
+  no* lista_ordenada = nova_lista();
+  no *lista, *pessoa, *famoso;
+  dados *info;
+  float maior;
+  int i;
+
+  for (i = 0; i < descobrir_no_amigos(lista_amigos); ++i)
+  {
+    maior = 0.0;
+    famoso = NULL;
+
+    for (lista = lista_amigos; lista != NULL; inc(lista))
+    {
+      while (lista != NULL && lista->info == NULL) inc(lista);
+      if (lista == NULL) break;
+
+      pessoa = lista->info;
+      info = pessoa->info;
+
+      if 
+      (
+        info->influencia > maior && 
+        !presente_na_lista(pessoa->nome, lista_ordenada)
+      )
+      {
+        maior = info->influencia;
+        famoso = pessoa;
+      }
+    }
+
+    lista_ordenada = adicionar_a_lista(lista_ordenada, famoso);
+  }
+
+  return lista_ordenada;
+}
+
+void escrever_ranking(no* lista_amigos)
+{
+  no *lista, *pessoa;
+  dados *info;
+
+  lista = lista_amigos;
+  while (lista != NULL)
+  {
+    pessoa = lista->info;
+    if (pessoa != NULL)
+    {
+      info = pessoa->info;
+      printf("\t%s: %.2f\n", pessoa->nome, info->influencia, info->no_amigos);
+    }
+    inc(lista);
+  }
 }
 
 void gerar_ranking(no* lista_amigos)
@@ -492,31 +549,20 @@ void gerar_ranking(no* lista_amigos)
 
   /*resultado final do evento*/
   puts("resultado final:");
-  while (lista != NULL)
-  {
-    pessoa = lista->info;
-    if (pessoa != NULL)
-    {
-      info = pessoa->info;
-      printf("\t%s: %.2f\n", pessoa->nome, info->influencia, info->no_amigos);
-    }
-    inc(lista);
-  }
+  escrever_ranking(lista);
 
   /*ordenacao da lista*/
   lista_ordenada = ordenar_lista(lista_amigos);
-  /*escrita da lista*/
-  puts("ranking final:");
-  while (lista != NULL)
-  {
 
-  }
+  /*escrita da lista*/
+  clear();
+  puts("ranking final:");
+  escrever_ranking(lista_ordenada);
 
   return;
 }
 
 /*FUNCOES PRINCIPAIS*/
-
 int main (int argc, char* argv[])
 {
   no* lista_amigos = NULL;
