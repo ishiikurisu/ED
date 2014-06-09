@@ -21,7 +21,9 @@ Descricao:
 # INDICE
 + DEFINICOES ACESSORIAS
   + alerta()
+  + instrucoes()
   + definicao de no*
+  + definicao de dados
 + FUNCOES DE LISTA
   + nova_lista()
   + adicionar_a_lista()
@@ -49,6 +51,7 @@ Descricao:
 #define bool int
 #define true 1
 #define false 0
+#define maybe (-1)
 
 #define inc(A) (A) = (A)->direita
 #define clear() system("clear")
@@ -57,6 +60,11 @@ void alerta()
 {
   puts("!FLAG!");
   return;
+}
+
+void instrucoes ()
+{
+  printf("ARQUIVO NAO ENCONTRADO!\nfaca um arquivo chamado \"amigos.txt\"\ne escreva uma lista de adjacencias como a seguir:\n\n\tjesus: joao, maria, pedro, mateus\n\tpedro: mateus, judas\n\tjudas: joao, maria\n\n");
 }
 
 /*
@@ -82,6 +90,11 @@ typedef struct no
   struct no* direita;
   struct no* esquerda;
 } no;
+
+typedef struct {
+  int no_amigos;
+  float influencia;
+} dados;
 
 /*FUNCOES DE LISTA*/
 /*esta funcao cria um novo no do tipo lista*/
@@ -372,24 +385,133 @@ no* leitura_arquivo (FILE* fp, no* lista_amigos)
 
 /*FUNCOES DE RANKING*/
 
-void preparar_loop(no* lista_amigos)
+/*preparacao do loop*/
+/*esta funcao descobre quantos amigos uma pessoa tem*/
+int descobrir_no_amigos(no* lista_amigos)
 {
-  /*
-  typedef struct {
+  int no_amigos = -1;
+  no* pessoa = lista_amigos;
 
-  } value;
-  */
+  while (pessoa != NULL)
+  {
+    inc(pessoa);
+    no_amigos++;
+  }
 
+  return no_amigos;
+}
+
+no* preparar_loop (no* lista_amigos)
+{
+  no* lista = inc(lista_amigos);  
+  no* pessoa;
+  dados* info;
+
+  printf("\n\n");
+
+  /*criacao dos nos*/
+  while (lista->direita != NULL)
+  {
+    /*alocacao de memoria*/
+    pessoa = lista->info;
+    printf("%s: ", pessoa->nome); fflush(stdout);
+    pessoa->info = (dados*) malloc(sizeof(dados));    
+
+    /*atribuicao de valores*/
+    info = pessoa->info;
+    info->influencia = 1.0;
+    info->no_amigos = descobrir_no_amigos(pessoa);
+    printf("%.2f&%d\n", info->influencia, info->no_amigos);
+
+    inc(lista);
+  }
+
+  return lista_amigos;
+}
+
+/*distribuicao de influencia*/
+/*esta funcao anda pelo grafo somando os valores de influencia*/
+void influenciar (no* grafo)
+{
+  no* pessoa = grafo;
+  no* amigo;
+  dados* info;
+  float influencia;
+
+  if (pessoa == NULL) return;
+
+  /*descoberta de influencia*/
+  info = pessoa->info;
+  if (info != NULL)
+    influencia = 0.85 / info->no_amigos;
+
+  /*distribuicao de influencia*/
+  inc(pessoa);
+  while (pessoa != NULL)
+  { 
+    amigo = pessoa->esquerda;
+    printf("%s... ", amigo->nome);
+    info = amigo->info;
+    info->influencia += influencia;      
+
+    inc(pessoa);
+  }
+
+  fflush(stdout);
   return;
 }
 
 void distribuir_influencia(no* lista_amigos)
 {
+  no* lista = lista_amigos;
+  no* amigo;
+
+  while(lista->direita != NULL)
+  {
+    amigo = lista->info;
+    printf("%s: ", amigo->nome);
+    influenciar(amigo);
+    inc(lista);
+  }
+
   return;
+}
+
+/*geracao do ranking*/
+no* ordenar_lista(no* lista_amigos)
+{
+  return lista_amigos;
 }
 
 void gerar_ranking(no* lista_amigos)
 {
+  no* lista = lista_amigos;
+  no* lista_ordenada;
+  no* pessoa;
+  dados* info;
+
+  /*resultado final do evento*/
+  puts("resultado final:");
+  while (lista != NULL)
+  {
+    pessoa = lista->info;
+    if (pessoa != NULL)
+    {
+      info = pessoa->info;
+      printf("\t%s: %.2f\n", pessoa->nome, info->influencia, info->no_amigos);
+    }
+    inc(lista);
+  }
+
+  /*ordenacao da lista*/
+  lista_ordenada = ordenar_lista(lista_amigos);
+  /*escrita da lista*/
+  puts("ranking final:");
+  while (lista != NULL)
+  {
+
+  }
+
   return;
 }
 
@@ -400,18 +522,22 @@ int main (int argc, char* argv[])
   no* lista_amigos = NULL;
   FILE* fp = fopen("amigos.txt", "r");
 
+  if (fp == NULL)
+  {
+    instrucoes();
+    exit(1);
+  }
+
   /*identificacao dos participantes*/
   while (!feof(fp))
-  {
     lista_amigos = leitura_arquivo(fp, lista_amigos);
-  }
   escrever_lista(lista_amigos);
 
   /*aplicacao do algoritmo*/
-  preparar_loop(lista_amigos);
+  lista_amigos = preparar_loop(lista_amigos);
+  if (lista_amigos == NULL) exit(2);
   distribuir_influencia(lista_amigos);
   gerar_ranking(lista_amigos);
-
 
   return 0;
 }

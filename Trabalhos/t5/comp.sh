@@ -1,2 +1,2 @@
-gcc index.c -o main -ansi -Wall || exit 1
+gcc index.c -o main -ansi || exit 1
 ./main
