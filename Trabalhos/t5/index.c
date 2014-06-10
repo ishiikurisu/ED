@@ -97,6 +97,8 @@ typedef struct no
   struct no* esquerda;
 } no;
 
+/*este struct servira mais tarde para gerar o ranking
+das pessoas mais influentes no grupo*/
 typedef struct {
   int no_amigos;
   float influencia;
@@ -267,6 +269,8 @@ void mostrar_conexoes(no* pai)
     printf("%s ", amigo->nome);
     inc(vertice);
   }
+
+  printf("\n");
 }
 
 /*esta funcao procura por uma pessoa na lista
@@ -324,7 +328,7 @@ char identificar_amigos(no* lista, no* pessoa, FILE* fp)
     controle = nome[tamanho-1];
     nome[tamanho-1] = '\0';
 
-    printf("\t"); puts(nome);
+    /*printf("\t"); puts(nome);*/
 
     if (!presente_na_lista(nome, lista_amigos))
     {
@@ -353,7 +357,8 @@ no* leitura_arquivo (FILE* fp, no* lista_amigos)
   if (lista_amigos == NULL)
     lista_amigos = nova_lista();
 
-  printf("\n");
+  /*printf("\n");*/
+
   /*identificacao da pessoa*/
   nome = (char*) malloc(sizeof(char));
   do 
@@ -368,7 +373,7 @@ no* leitura_arquivo (FILE* fp, no* lista_amigos)
   if (strlen(nome) == 0)
     return lista_amigos;
 
-  printf("%s:\n", nome);
+  /*printf("%s:\n", nome);*/
 
   if (!presente_na_lista(nome, lista_amigos))
   {
@@ -413,21 +418,19 @@ no* preparar_loop (no* lista_amigos)
   no* pessoa;
   dados* info;
 
-  printf("\n\n");
-
   /*criacao dos nos*/
   while (lista->direita != NULL)
   {
     /*alocacao de memoria*/
     pessoa = lista->info;
-    printf("%s: ", pessoa->nome); fflush(stdout);
+    /*printf("%s: ", pessoa->nome);*/
     pessoa->info = (dados*) malloc(sizeof(dados));    
 
     /*atribuicao de valores*/
     info = pessoa->info;
     info->influencia = 1.0;
     info->no_amigos = descobrir_no_amigos(pessoa);
-    printf("%.2f&%d\n", info->influencia, info->no_amigos);
+    /*printf("%.2f&%d\n", info->influencia, info->no_amigos);*/
 
     inc(lista);
   }
@@ -456,7 +459,7 @@ void influenciar (no* grafo)
   while (pessoa != NULL)
   { 
     amigo = pessoa->esquerda;
-    printf("%s... ", amigo->nome);
+    /*printf("%s... ", amigo->nome);*/
     info = amigo->info;
     info->influencia += influencia;      
 
@@ -475,7 +478,7 @@ void distribuir_influencia(no* lista_amigos)
   while(lista->direita != NULL)
   {
     amigo = lista->info;
-    printf("%s: ", amigo->nome);
+    /*printf("%s: ", amigo->nome);*/
     influenciar(amigo);
     inc(lista);
   }
@@ -540,6 +543,29 @@ void escrever_ranking(no* lista_amigos)
   }
 }
 
+void escrever_ranking_arquivo(no* lista_amigos)
+{
+  no *lista, *pessoa;
+  dados *info;
+  FILE* fp = fopen("amigosED20141.txt", "w");
+
+  fprintf(fp, "RANKING:\n");
+  lista = lista_amigos;
+  while (lista != NULL)
+  {
+    pessoa = lista->info;
+    if (pessoa != NULL)
+    {
+      info = pessoa->info;
+      fprintf(fp, "\t%s: %.2f\n", pessoa->nome, info->influencia, info->no_amigos);
+    }
+    inc(lista);
+  }
+  
+  fclose(fp);
+  return;
+}
+
 void gerar_ranking(no* lista_amigos)
 {
   no* lista = lista_amigos;
@@ -548,16 +574,17 @@ void gerar_ranking(no* lista_amigos)
   dados* info;
 
   /*resultado final do evento*/
-  puts("resultado final:");
-  escrever_ranking(lista);
+  /*puts("resultado final:");
+  escrever_ranking(lista);*/
 
   /*ordenacao da lista*/
   lista_ordenada = ordenar_lista(lista_amigos);
 
   /*escrita da lista*/
-  clear();
+  printf("\n");
   puts("ranking final:");
   escrever_ranking(lista_ordenada);
+  escrever_ranking_arquivo(lista_ordenada);
 
   return;
 }
@@ -567,6 +594,7 @@ int main (int argc, char* argv[])
 {
   no* lista_amigos = NULL;
   FILE* fp = fopen("amigos.txt", "r");
+  int i;
 
   if (fp == NULL)
   {
@@ -577,13 +605,14 @@ int main (int argc, char* argv[])
   /*identificacao dos participantes*/
   while (!feof(fp))
     lista_amigos = leitura_arquivo(fp, lista_amigos);
-  escrever_lista(lista_amigos);
 
   /*aplicacao do algoritmo*/
   lista_amigos = preparar_loop(lista_amigos);
   if (lista_amigos == NULL) exit(2);
-  distribuir_influencia(lista_amigos);
+  for(i = 0; i < descobrir_no_amigos(lista_amigos); ++i)
+    distribuir_influencia(lista_amigos);
   gerar_ranking(lista_amigos);
 
+  fclose(fp);
   return 0;
 }

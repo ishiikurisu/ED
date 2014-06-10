@@ -1,4 +1,0 @@
-joe: igor, juliana, rafael
-igor: joe, rafael
-juliana: joe, igor
-rafael: igor

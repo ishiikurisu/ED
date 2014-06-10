@@ -1,0 +1,7 @@
+RANKING:
+	igor: 7.80
+	joe: 5.25
+	jade: 5.25
+	rafael: 4.40
+	juliana: 2.70
+	gabriel: 1.00
