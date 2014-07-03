@@ -1,0 +1,21 @@
+brasilia-goiania:173
+brasilia-campina grande:2175
+brasilia-blumenau:1624
+brasilia-belo horizonte:716
+goiania-campo grande:877
+goiania-belem:2046
+goiania-belo horizonte:874
+campo grande-boa vista:2667
+campo grande-curitiba:780
+blumenau-curitiba:228
+blumenau-florianopolis:139
+curitiba-santos:480
+curitiba-florianopolis:300
+santos-rio de janeiro:501
+santos-belo horizonte:658
+belo horizonte-petropolis:376
+rio de janeiro-petropolis:66
+joao pessoa-rio de janeiro:2448
+campina grande-joao pessoa:130
+joao pessoa-belem:2161
+boa vista-belem:1433
